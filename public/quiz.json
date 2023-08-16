@@ -1,0 +1,19 @@
+[
+  {
+    "id": "01",
+    "question": "Which of the following is the correct name of React.js?",
+    "options": ["React", "React.js", "ReactJS", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": "02",
+    "question": "Which of the following are the advantages of React.js?",
+    "options": [
+      "React.js can increase the application's performance with Virtual DOM.",
+      "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
+      "React.js can render both on client and server side.",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  }
+]
