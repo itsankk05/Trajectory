@@ -1,19 +1,152 @@
 [
   {
     "id": "01",
-    "question": "Which of the following is the correct name of React.js?",
-    "options": ["React", "React.js", "ReactJS", "All of the above"],
-    "answer": "All of the above"
+    "question": "What subjects are you most interested in?",
+    "options": [
+      "Mathematics and Science",
+      "Languages and Literature",
+      "Social Studies and History",
+      "Art and Creativity"
+    ]
   },
   {
     "id": "02",
-    "question": "Which of the following are the advantages of React.js?",
+    "question": "Which activities do you enjoy the most during your free time?",
     "options": [
-      "React.js can increase the application's performance with Virtual DOM.",
-      "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
-      "React.js can render both on client and server side.",
-      "All of the above"
-    ],
-    "answer": "All of the above"
+      "Solving puzzles or building things",
+      "Reading books or writing stories",
+      "Participating in debates or discussions",
+      "Drawing, painting, or crafting"
+    ]
+  },
+  {
+    "id": "03",
+    "question": "What type of job environment do you prefer?",
+    "options": [
+      "Working in a laboratory or research setting",
+      "Working in a quiet and focused environment",
+      "Working in a collaborative and social setting",
+      "Working in a visually creative environment"
+    ]
+  },
+  {
+    "id": "04",
+    "question": "Which of the following skills do you consider your strong suit?",
+    "options": [
+      "Analyzing data and solving problems",
+      "Expressing thoughts clearly in writing",
+      "Connecting with people and understanding their perspectives",
+      "Visualizing and creating artistic designs"
+    ]
+  },
+  {
+    "id": "05",
+    "question": "What future goal appeals to you the most?",
+    "options": [
+      "Becoming a scientist or engineer",
+      "Pursuing a career in writing or journalism",
+      "Working in a field related to human behavior or society",
+      "Exploring careers in the arts or design"
+    ]
+  },
+  {
+    "id": "06",
+    "question": "What do you enjoy learning about the most?",
+    "options": [
+      "Mathematics and technological advancements",
+      "Literature, language, and communication",
+      "History, cultures, and societal dynamics",
+      "Visual arts, design principles, and aesthetics"
+    ]
+  },
+  {
+    "id": "07",
+    "question": "What kind of challenges do you find exciting?",
+    "options": [
+      "Complex problem-solving and logical reasoning",
+      "Crafting engaging and persuasive narratives",
+      "Understanding diverse perspectives and helping others",
+      "Transforming ideas into visually appealing creations"
+    ]
+  },
+  {
+    "id": "08",
+    "question": "Which field sounds the most intriguing to you?",
+    "options": [
+      "Engineering and computer science",
+      "Literature and journalism",
+      "Psychology and social work",
+      "Fine arts and graphic design"
+    ]
+  },
+  {
+    "id": "09",
+    "question": "What type of impact would you like to make through your career?",
+    "options": [
+      "Innovating and contributing to scientific advancements",
+      "Inspiring and influencing people through words",
+      "Bringing positive changes to individuals and communities",
+      "Enriching lives through creative expressions"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "Which of the following quotes resonates with you the most?",
+    "options": [
+      "\"Logic will get you from A to B. Imagination will take you everywhere.\" - Albert Einstein",
+      "\"The pen is mightier than the sword.\" - Edward Bulwer-Lytton",
+      "\"Empathy is seeing with the eyes of another, listening with the ears of another, and feeling with the heart of another.\" - Alfred Adler",
+      "\"Art enables us to find ourselves and lose ourselves at the same time.\" - Thomas Merton"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "What kind of tasks do you find most engaging?",
+    "options": [
+      "Solving intricate puzzles and mathematical challenges",
+      "Crafting compelling stories and written content",
+      "Interacting with people and understanding their emotions",
+      "Creating visual designs and artistic projects"
+    ]
+  },
+  {
+    "id": "12",
+    "question": "How do you approach new and unfamiliar situations?",
+    "options": [
+      "By analyzing and breaking down the components logically",
+      "By seeking information and researching thoroughly",
+      "By connecting with others and learning from their experiences",
+      "By using your imagination and thinking creatively"
+    ]
+  },
+  {
+    "id": "13",
+    "question": "What type of work schedule appeals to you?",
+    "options": [
+      "Structured and organized routine",
+      "Flexible hours with opportunities for creativity",
+      "A mix of collaboration and individual tasks",
+      "Helping others in a dynamic and changing environment"
+    ]
+  },
+  {
+    "id": "14",
+    "question": "What type of learning environment do you prefer?",
+    "options": [
+      "Laboratories and hands-on experimentation",
+      "Libraries and quiet spaces for reading and studying",
+      "Interactive classrooms with group discussions",
+      "Studios or workshops for hands-on creative work"
+    ]
+  },
+  {
+    "id": "15",
+    "question": "What motivates you in a career?",
+    "options": [
+      "Solving complex problems and making discoveries",
+      "Expressing your thoughts and ideas effectively",
+      "Making a positive impact on individuals and society",
+      "Bringing aesthetic beauty and creativity to the world"
+    ]
   }
 ]

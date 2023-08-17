@@ -6,7 +6,7 @@ const Quiz = ({
   question,
   quizs,
   checkAnswer,
-  correctAnswer,
+  // correctAnswer,
   selectedAnswer,
   questionIndex,
   nextQuestion,
@@ -40,9 +40,8 @@ const Quiz = ({
                 {question?.options?.map((item, index) => (
                   <button
                     key={index}
-                    className={`option w-100 text-start btn text-white py-2 px-3 mt-3 rounded btn-dark ${
-                      correctAnswer === item && "bg-success"
-                    }`}
+                    className={`option w-100 text-start btn text-white py-2 px-3 mt-3 rounded btn-dark 
+                    `}
                     onClick={(event) => checkAnswer(event, item)}
                   >
                     {item}
@@ -54,7 +53,6 @@ const Quiz = ({
                 <button
                   className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
                   onClick={nextQuestion}
-                  disabled={!selectedAnswer}
                 >
                   Next Question
                 </button>

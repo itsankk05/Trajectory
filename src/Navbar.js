@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-custom">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            Trajectory
           </a>
           <button
             className="navbar-toggler"

@@ -9,12 +9,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function App() {
+  // const [answer, setAnswer] = useState([]);
   const [quizs, setQuizs] = useState([]);
   const [question, setQuesion] = useState({});
   const [questionIndex, setQuestionIndex] = useState(0);
-  const [correctAnswer, setCorrectAnswer] = useState("");
   const [selectedAnswer, setSelectedAnswer] = useState("");
-  const [marks, setMarks] = useState(0);
+  const [collectedAnswers, setCollectedAnswers] = useState([]);
 
   // Display Controlling States
   const [showStart, setShowStart] = useState(true);
@@ -41,30 +41,35 @@ function App() {
     setShowQuiz(true);
   };
 
-  // Check Answer
-  const checkAnswer = (event, selected) => {
-    if (!selectedAnswer) {
-      setCorrectAnswer(question.answer);
-      setSelectedAnswer(selected);
+  // const storeAnswers = (selectedAnswer) => {
+  //   // const newAns = [];
+  //   answer.push(selectedAnswer);
+  //   setAnswer([answer]);
+  //   console.log(setAnswer);
+  // };
 
-      if (selected === question.answer) {
-        event.target.classList.add("bg-success");
-        setMarks(marks + 1);
-      } else {
-        event.target.classList.add("bg-danger");
-      }
-    }
+  // State to store the collected answers
+
+  // Function to add selected answer to the array
+  const storeAnswer = (selectedAnswer) => {
+    setCollectedAnswers((prevAnswers) => [...prevAnswers, selectedAnswer]);
   };
 
   // Next Quesion
   const nextQuestion = () => {
-    setCorrectAnswer("");
+    storeAnswer(selectedAnswer);
+    console.log(collectedAnswers);
     setSelectedAnswer("");
-    const wrongBtn = document.querySelector("button.bg-danger");
-    wrongBtn?.classList.remove("bg-danger");
+    setQuestionIndex(questionIndex + 1);
     const rightBtn = document.querySelector("button.bg-success");
     rightBtn?.classList.remove("bg-success");
-    setQuestionIndex(questionIndex + 1);
+  };
+
+  const checkAnswer = (event, selected) => {
+    if (!selectedAnswer) {
+      setSelectedAnswer(selected);
+      event.target.classList.add("bg-success");
+    }
   };
 
   // Show Result
@@ -79,10 +84,11 @@ function App() {
     setShowStart(false);
     setShowResult(false);
     setShowQuiz(true);
-    setCorrectAnswer("");
+    // setAnswer([]);
+    // setCorrectAnswer("");
     setSelectedAnswer("");
     setQuestionIndex(0);
-    setMarks(0);
+    // setMarks(0);
     const wrongBtn = document.querySelector("button.bg-danger");
     wrongBtn?.classList.remove("bg-danger");
     const rightBtn = document.querySelector("button.bg-success");
@@ -105,15 +111,17 @@ function App() {
             path="/quiz"
             element={
               <Quiz
+                collectedAnswers={collectedAnswers}
+                storeAnswer={storeAnswer}
                 showQuiz={showQuiz}
                 question={question}
                 quizs={quizs}
                 checkAnswer={checkAnswer}
-                correctAnswer={correctAnswer}
                 selectedAnswer={selectedAnswer}
                 questionIndex={questionIndex}
                 nextQuestion={nextQuestion}
                 showTheResult={showTheResult}
+                // updateAnswers={updateAnswers}
               />
             }
           />
@@ -124,7 +132,7 @@ function App() {
               <Result
                 showResult={showResult}
                 quizs={quizs}
-                marks={marks}
+                // marks={marks}
                 startOver={startOver}
               />
             }
@@ -136,31 +144,3 @@ function App() {
 }
 
 export default App;
-
-// return (
-//   <>
-//     {/* Welcome Page */}
-//     <Start startQuiz={startQuiz} showStart={showStart} />
-
-//     {/* Quiz Page */}
-//     <Quiz
-//       showQuiz={showQuiz}
-//       question={question}
-//       quizs={quizs}
-//       checkAnswer={checkAnswer}
-//       correctAnswer={correctAnswer}
-//       selectedAnswer={selectedAnswer}
-//       questionIndex={questionIndex}
-//       nextQuestion={nextQuestion}
-//       showTheResult={showTheResult}
-//     />
-
-//     {/* Result Page */}
-//     <Result
-//       showResult={showResult}
-//       quizs={quizs}
-//       marks={marks}
-//       startOver={startOver}
-//     />
-//   </>
-// );
