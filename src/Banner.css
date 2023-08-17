@@ -1,33 +1,77 @@
 .banner {
-  text-align: center;
-  /* margin-top: 300px; */
-  object-fit: contain;
+  text-align: left; /* Align text and button to the left */
+  background-size: cover;
+  background-position: center center;
+}
+.mainpagecontent {
+  display: flex;
+  align-items: center; /* Center vertically */
+  
 }
 
 .banner_description {
-  padding-top: 20px;
+  
+  font-family: "Roboto Mono", sans-serif;
+  display: inline;
+  align-items: center;
+  margin-top: 30px;
   margin-left: 50px;
+  margin-right: 50px;
+  font-weight: bolder;
+}
+.carrerimgg {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  margin-top: -25px;
+  margin-left: 100px;
+}
+
+.carrerimgg img {
+  width: 550px;
+  height: auto;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-top: 90px;
+}
+
+.banner_description h1 {
+  text-align: left; /* Align "Hey There!" text to the left */
+  margin-left: -280px;
+  font-weight: bolder;
+}
+
+.banner_description h3 {
+  font-size: medium;
+  margin-top: 40px;
+  line-height: 1.5;
+  
+  font-weight: bolder;
+}
+
+.banner_buttons {
+  margin-left: 180px;
+  margin-top: -70px;
+
+
 }
 
 /* CSS for button */
-
-/* CSS */
 .button-52 {
-  width: 250px;
+  width: 200px;
   height: 100px;
-  margin-top: 250px;
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 13px 20px 13px;
+  /* padding: 13px 20px 13px; */
   outline: 0;
-  border: 1px solid black;
+  border: 4px solid black;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border-radius: 10px;
 }
 
 .button-52:after {

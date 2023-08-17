@@ -17,14 +17,27 @@ export default function Banner() {
         backgroundPosition: "center center",
       }}
     >
-      <div className="banner_description">
-        <h1 style={{ textAlign: "center" }}>Hey There!</h1>
-        <h3 style={{ textAlign: "left" }}>Description About the Website</h3>
+      <div className="mainpagecontent">
+        <div className="banner_description">
+          <h1 style={{ textAlign: "center" }}>Hey There!</h1>
+          <h3 style={{ textAlign: "left" }}>
+            Discover Your Path: Embark on a personalized journey towards your
+            dream career. Whether you're in 10th grade, 12th grade, or college,
+            our interactive quiz matches your aspirations, strengths, and
+            interests to a world of exciting career possibilities. Unveil your
+            potential and let us guide you towards a future filled with purpose.
+          </h3>
+        </div>
+        <div className="careerimg">
+          <a className="carrerimgg" href="/">
+            <img src="shutter.png" alt="bga" />
+          </a>
+        </div>
       </div>
 
       <div className="banner_buttons">
         <Link to="/form">
-          <button className="button-52">Button 52</button>
+          <button className="button-52">Start The Quiz</button>
         </Link>
       </div>
     </header>

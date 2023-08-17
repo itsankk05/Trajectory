@@ -2,3 +2,43 @@
   width: 300px;
   height: 400px;
 }
+/* ... Your existing CSS code ... */
+
+.required {
+  color: red;
+  margin-left: 4px; /* Add a small spacing between the label and the star */
+}
+
+/* Additional adjustments for the button */
+.btn-outline-primary:disabled {
+  background-color: #e9ecef; /* Gray out the button when disabled */
+  border-color: #e9ecef; /* Gray out the border when disabled */
+}
+/* Add this CSS to your existing "Form.css" or your preferred CSS file */
+
+/* Style for the dropdown menu options */
+.dropdown-menu a {
+  color: black; /* Set the text color to black */
+  text-decoration: none; /* Remove underline */
+  display: block;
+  padding: 10px 15px;
+  transition: background-color 0.2s;
+}
+
+/* Style for the dropdown menu options on hover */
+.dropdown-menu a:hover {
+  background-color: #f8f9fa; /* Light gray background on hover */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  background-color: white; /* Set the background color to white */
+  border: none; /* Remove border */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  border-radius: 5px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+

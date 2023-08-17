@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { Link } from "react-router-dom";
 
 export default function Form() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    setIsFormValid(name.trim() !== "" && email.trim() !== "");
+  }, [name, email]);
+
   return (
     <>
       <div className="container my-5" style={{ textAlign: "center" }}>
         <h1>Enter Your Details</h1>
         <div className="mb-3 my-5">
           <label htmlFor="exampleFormControlInput1" className="form-label">
-            Name of the Candidate:
+            Name of the Candidate:<span className="required">*</span>
           </label>
           <div className="row d-flex justify-content-center">
             <input
               className="form-control w-50"
               id="exampleFormControlInput1"
               placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
             />
           </div>
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlTextarea1" className="form-label">
-            E-Mail Address:
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            E-Mail Address:<span className="required">*</span>
           </label>
           <div className="row d-flex justify-content-center">
             <input
@@ -29,6 +40,9 @@ export default function Form() {
               className="form-control w-50"
               id="exampleFormControlInput1"
               placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
         </div>
@@ -44,24 +58,22 @@ export default function Form() {
           </button>
           <ul className="dropdown-menu w-50" style={{ height: "auto" }}>
             <li>
-              <a className="dropdown-item" href="/">
-                Action
-              </a>
+              <Link to="/">Action</Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
-                Another action
-              </a>
+              <Link to="/">Another action</Link>
             </li>
             <li>
-              <a className="dropdown-item" href="/">
-                Something else here
-              </a>
+              <Link to="/">Something else here</Link>
             </li>
           </ul>
         </div>
-        <Link to="/start">
-          <button type="button" className="btn btn-outline-primary">
+        <Link to={isFormValid ? "/start" : "#"}>
+          <button
+            type="submit"
+            className="btn btn-outline-primary"
+            disabled={!isFormValid}
+          >
             Submit
           </button>
         </Link>
