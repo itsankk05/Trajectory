@@ -58,7 +58,30 @@ function App() {
     rightBtn?.classList.remove("bg-success");
   };
 
-  // const searchAnswer = () => {};
+  const searchAnswer = () => {
+    const class12 = [];
+    const class10 = [
+      "Mathematics",
+      "Science",
+      "laboratory",
+      "reaerch",
+      "Analyzing",
+      "scientist",
+      "engineer",
+      "Mathematics",
+      "technological",
+      "logical reas",
+    ];
+    let class10Points = 0;
+    let class12Points = 0;
+    for (let i; i >= collectedAnswers.length; i++) {
+      if (collectedAnswers[i] in class12) {
+        class12Points = +1;
+      } else if (collectedAnswers[i] in class10) {
+        class10Points += 1;
+      }
+    }
+  };
 
   const checkAnswer = (event, selected) => {
     if (!selectedAnswer) {
@@ -79,8 +102,7 @@ function App() {
     setShowStart(false);
     setShowResult(false);
     setShowQuiz(true);
-    // setAnswer([]);
-    // setCorrectAnswer("");
+
     setSelectedAnswer("");
     setQuestionIndex(0);
     // setMarks(0);
