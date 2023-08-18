@@ -1,12 +1,14 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <div className="nav_color">
-      <nav className="navbar navbar-expand-lg navbar-custom">
+      <nav className="navbar navbar-expand bg-dark-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Trajectory
+            <img src="logox.png" alt="Logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -19,17 +21,18 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link active" to="/about">
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

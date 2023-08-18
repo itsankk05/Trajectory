@@ -1,12 +1,13 @@
 import "./App.css";
-import Navbar from "./Navbar";
-import Banner from "./Banner";
+import Navbar from "./Navbar/Navbar";
+import Banner from "./Banner/Banner";
 import Quiz from "./Quiz/Quiz";
-import Form from "./Form";
+import Form from "./Form/Form";
 import Start from "./Quiz/Start";
 import Result from "./Quiz/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import About from "./About/About";
 
 function App() {
   // const [answer, setAnswer] = useState([]);
@@ -41,15 +42,7 @@ function App() {
     setShowQuiz(true);
   };
 
-  // const storeAnswers = (selectedAnswer) => {
-  //   // const newAns = [];
-  //   answer.push(selectedAnswer);
-  //   setAnswer([answer]);
-  //   console.log(setAnswer);
-  // };
-
   // State to store the collected answers
-
   // Function to add selected answer to the array
   const storeAnswer = (selectedAnswer) => {
     setCollectedAnswers((prevAnswers) => [...prevAnswers, selectedAnswer]);
@@ -64,6 +57,8 @@ function App() {
     const rightBtn = document.querySelector("button.bg-success");
     rightBtn?.classList.remove("bg-success");
   };
+
+  // const searchAnswer = () => {};
 
   const checkAnswer = (event, selected) => {
     if (!selectedAnswer) {
@@ -121,7 +116,6 @@ function App() {
                 questionIndex={questionIndex}
                 nextQuestion={nextQuestion}
                 showTheResult={showTheResult}
-                // updateAnswers={updateAnswers}
               />
             }
           />
@@ -137,6 +131,7 @@ function App() {
               />
             }
           />
+          <Route exact path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>

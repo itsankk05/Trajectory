@@ -1,10 +1,16 @@
 .App {
   text-align: center;
 }
-/* 
+
 .app {
-  background-color: #212329;
-} */
+  max-width: 100%;
+  overflow-x: hidden;
+
+  overflow-y: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #9da2a7;
+}
 
 .App-logo {
   height: 40vmin;
@@ -25,6 +31,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+
   /* color: white; */
 }
 
