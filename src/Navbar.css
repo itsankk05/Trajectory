@@ -1,0 +1,36 @@
+.nav_color {
+ 
+  height: 70px;
+  background-color: #212529;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center; /* Vertically center-align items */
+}
+
+.navbar-brand img {
+  width: 200px; /* Set the desired width for the logo image */
+  height: auto; /* Automatically adjust height while maintaining aspect ratio */
+  margin-right: 10px; /* Add spacing between the logo and text if needed */
+  margin-top: -25px;
+  
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  color: white !important; /* Set text color to white */
+}
+
+
+.navbar-nav {
+  font-weight: bold;
+}
