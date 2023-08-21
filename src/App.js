@@ -8,7 +8,7 @@ import Result from "./Quiz/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import About from "./About/About";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 // import searchAnswer from "./Quiz/Function";
 
@@ -58,6 +58,40 @@ function App() {
     storeAnswer(selectedAnswer);
     setSelectedAnswer("");
     setQuestionIndex(questionIndex + 1);
+    const rightBtn = document.querySelector("button.bg-success");
+    rightBtn?.classList.remove("bg-success");
+  };
+
+  const checkAnswer = (event, selected) => {
+    setSelectedAnswer(selected); // Select the clicked answer
+    event.target.classList.add("bg-success"); // Add highlighting
+
+    // Deselect previously selected answer and remove highlighting
+    const allOptions = event.target.parentElement.querySelectorAll(".option");
+    allOptions.forEach((option) => {
+      if (option !== event.target) {
+        option.classList.remove("bg-success");
+      }
+    });
+  };
+
+  // Show Result
+  const showTheResult = () => {
+    setShowResult(true);
+    setShowStart(false);
+    setShowQuiz(false);
+  };
+
+  // Start Over
+  const startOver = () => {
+    setShowStart(false);
+    setShowResult(false);
+    setShowQuiz(true);
+
+    setSelectedAnswer("");
+    setQuestionIndex(0);
+    const wrongBtn = document.querySelector("button.bg-danger");
+    wrongBtn?.classList.remove("bg-danger");
     const rightBtn = document.querySelector("button.bg-success");
     rightBtn?.classList.remove("bg-success");
   };
@@ -165,38 +199,10 @@ function App() {
       { category: "Arts", points: class10PointsArts },
     ];
 
+    rankings.sort((a, b) => b.points - a.points);
     // Return the rankings
     return rankings;
   }
-
-  const checkAnswer = (event, selected) => {
-    if (!selectedAnswer) {
-      setSelectedAnswer(selected);
-      event.target.classList.add("bg-success");
-    }
-  };
-
-  // Show Result
-  const showTheResult = () => {
-    setShowResult(true);
-    setShowStart(false);
-    setShowQuiz(false);
-  };
-
-  // Start Over
-  const startOver = () => {
-    setShowStart(false);
-    setShowResult(false);
-    setShowQuiz(true);
-
-    setSelectedAnswer("");
-    setQuestionIndex(0);
-    // setMarks(0);
-    const wrongBtn = document.querySelector("button.bg-danger");
-    wrongBtn?.classList.remove("bg-danger");
-    const rightBtn = document.querySelector("button.bg-success");
-    rightBtn?.classList.remove("bg-success");
-  };
   return (
     <div className="app">
       <Router>
@@ -221,6 +227,7 @@ function App() {
                 quizs={quizs}
                 checkAnswer={checkAnswer}
                 selectedAnswer={selectedAnswer}
+                setSelectedAnswer={setSelectedAnswer}
                 questionIndex={questionIndex}
                 nextQuestion={nextQuestion}
                 showTheResult={showTheResult}
@@ -242,7 +249,7 @@ function App() {
           />
           <Route exact path="/about" element={<About />} />
         </Routes>
-        , <Footer />
+        {/* , <Footer /> */}
       </Router>
     </div>
   );

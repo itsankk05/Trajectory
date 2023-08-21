@@ -13,7 +13,9 @@ function Result({
     return null;
   }
 
-  const rankings = searchAnswer(collectedAnswers).sort((a, b) => b.points - a.points);
+  const rankings = searchAnswer(collectedAnswers).sort(
+    (a, b) => b.points - a.points
+  );
 
   return (
     <section className="bg-dark text-white result-section">
@@ -29,7 +31,11 @@ function Result({
                   <div className={`rank-label ${getRankLabelClass(index)}`}>
                     {getRankLabel(index)}
                   </div>
-                  <div className={`rank-category ${getCategoryClass(rank.category)}`}>
+                  <div
+                    className={`rank-category ${getCategoryClass(
+                      rank.category
+                    )}`}
+                  >
                     {rank.category}
                   </div>
                   {getCategoryLink(rank.category)}
@@ -38,6 +44,7 @@ function Result({
             </ul>
             <Link to="/form">
               <button
+                style={{ textDecoration: "none" }}
                 onClick={startOver}
                 className="btn py-2 px-4 btn-light fw-bold d-inline start-over-button"
               >
@@ -89,11 +96,41 @@ function getCategoryClass(category) {
 function getCategoryLink(category) {
   switch (category) {
     case "Arts":
-      return <a href="https://www.coursesafter10th.com/arts/arts-stream/" target="_blank"  rel="noreferrer" className="category-link">Explore Arts</a>;
+      return (
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://www.coursesafter10th.com/arts/arts-stream/"
+          target="_blank"
+          rel="noreferrer"
+          className="category-link"
+        >
+          Explore Arts
+        </a>
+      );
     case "Science":
-      return <a href="https://www.uniapply.com/blog/science-stream-after-10th/" target="_blank"  rel="noreferrer" className="category-link">Discover Science</a>;
+      return (
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://www.uniapply.com/blog/science-stream-after-10th/"
+          target="_blank"
+          rel="noreferrer"
+          className="category-link"
+        >
+          Discover Science
+        </a>
+      );
     case "Commerce":
-      return <a href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/" target="_blank"  rel="noreferrer" className="category-link">Browse Commerce</a>;
+      return (
+        <a
+          style={{ textDecoration: "none" }}
+          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          target="_blank"
+          rel="noreferrer"
+          className="category-link"
+        >
+          Browse Commerce
+        </a>
+      );
     default:
       return null;
   }
