@@ -1,0 +1,82 @@
+/* result.css */
+/* You can create a separate CSS file for your styles */
+
+.result-section {
+    background-color: #343a40; /* Bootstrap dark background color */
+    padding: 40px 0; /* Adjust padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px); /* Adjust min-height to prevent scrolling */
+  }
+  
+  .result-heading {
+    font-size: 32px;
+    margin-bottom: 10px; /* Reduce margin-bottom */
+  }
+  
+  .rankings-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px; /* Reduce margin-top */
+  }
+  
+  .rank-item {
+    margin-bottom: 10px; /* Reduce margin-bottom */
+  }
+  
+  .rank-label {
+    font-size: 18px;
+    margin-bottom: 5px; /* Reduce margin-bottom */
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .first-choice,
+  .second-choice,
+  .third-choice {
+    font-weight: bold;
+  }
+  
+  .other-choice {
+    font-weight: normal;
+  }
+  
+  .rank-category {
+    font-size: 18px;
+    color: #999;
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .category-highlight {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .category-link {
+    font-size: 16px;
+    margin-top: 5px; /* Reduce margin-top */
+    display: inline-block;
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .start-over-button {
+    margin-top: 10px; /* Reduce margin-top */
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Additional custom styles specific to your design can be added here */
+  
