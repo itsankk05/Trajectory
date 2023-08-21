@@ -38,10 +38,11 @@ function Result({
       style={{ display: `${showResult ? "block" : "none"}` }}
     >
       <div className="container">
-        <div className="row vh-100 align-items-center justify-content-center">
+        <div className="row vh-100 vw-100 align-items-center justify-content-center">
           <div className="col-lg-6">
             <h1 className="mb-2 fw-bold">
-              Seems Like You Are Interested in ....
+              Seems Like You Are <br />
+              Interested in:
             </h1>
             <ul style={{ listStyleType: "none" }}>
               {rankings.map((rank, index) => (

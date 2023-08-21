@@ -8,6 +8,7 @@ import Result from "./Quiz/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import About from "./About/About";
+import Footer from "./Footer";
 
 // import searchAnswer from "./Quiz/Function";
 
@@ -81,6 +82,7 @@ function App() {
       "Flexible hours with opportunities for creativity",
       "By seeking information and researching thoroughly",
       "Structured and organized routine",
+      "By connecting with others and learning from their experiences",
     ];
     const class10Commmerce = [
       "Languages and Literature",
@@ -103,6 +105,7 @@ function App() {
       "Structured and organized routine",
       "Understanding diverse perspectives and helping others",
       '"The pen is mightier than the sword." - Edward Bulwer-Lytton',
+      "By connecting with others and learning from their experiences",
     ];
     const class10Arts = [
       "Social Studies and History",
@@ -129,6 +132,8 @@ function App() {
       "Literature, language, and communication",
       '"Art enables us to find ourselves and lose ourselves at the same time." - Thomas Merton',
       '"Empathy is seeing with the eyes of another, listening with the ears of another, and feeling with the heart of another." - Alfred Adler',
+      "Helping others in a dynamic and changing environment",
+      "Studios or workshops for hands-on creative work",
     ];
 
     let class10PointsScience = 0;
@@ -159,8 +164,6 @@ function App() {
       { category: "Commerce", points: class10PointsCommerce },
       { category: "Arts", points: class10PointsArts },
     ];
-
-    // rankings.sort((a, b) => b.points - a.points);
 
     // Return the rankings
     return rankings;
@@ -233,13 +236,13 @@ function App() {
                 searchAnswer={searchAnswer}
                 showResult={showResult}
                 quizs={quizs}
-                // marks={marks}
                 startOver={startOver}
               />
             }
           />
           <Route exact path="/about" element={<About />} />
         </Routes>
+        , <Footer />
       </Router>
     </div>
   );
