@@ -14,7 +14,8 @@ const Quiz = ({
   return (
     <section
       className="bg-dark text-white"
-      style={{ display: `${showQuiz ? "block" : "none"}` }}
+      style={{     overflowY: "hidden",
+      display: `${showQuiz ? "block" : "none"}` }}
     >
       <div className="container">
         <div className="row vh-100 align-items-center justify-content-center">

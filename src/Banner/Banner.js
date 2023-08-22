@@ -1,26 +1,14 @@
 import React from "react";
 import "./Banner.css";
 import { Link } from "react-router-dom";
-export default function Banner() {
-  //   const navigate = useNavigate();
 
-  //   const navigateToform = () => {
-  //     navigate("/form");
-  //   };
+export default function Banner() {
   return (
-    <header
-      className="banner"
-      style={{
-        backgroundImage:
-          "https://png.pngtree.com/png-vector/20210828/ourmid/pngtree-orange-te-shat-anxious-girl-feeling-confused-and-open-hand-cartoon-png-image_3827180.jpg",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-      }}
-    >
+    <header className="banner">
       <div className="mainpagecontent">
         <div className="banner_description">
-          <h1 style={{ textAlign: "center" }}>Hey There!</h1>
-          <h3 style={{ textAlign: "left" }}>
+          <h1>Hey There!</h1>
+          <h3>
             Discover Your Path: Embark on a personalized journey towards your
             dream career. Whether you're in 10th grade, 12th grade, or college,
             our interactive quiz matches your aspirations, strengths, and
@@ -37,7 +25,7 @@ export default function Banner() {
 
       <div className="banner_buttons">
         <Link to="/form">
-          <button className="button-52">Start The Quiz</button>
+          <button className="button-52">Start Your Journey</button>
         </Link>
       </div>
     </header>

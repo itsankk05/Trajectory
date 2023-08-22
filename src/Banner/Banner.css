@@ -1,16 +1,15 @@
 .banner {
-  text-align: left; /* Align text and button to the left */
+  text-align: left;
   background-size: cover;
   background-position: center center;
 }
+
 .mainpagecontent {
   display: flex;
-  align-items: center; /* Center vertically */
-  
+  align-items: center;
 }
 
 .banner_description {
-  
   font-family: "Roboto Mono", sans-serif;
   display: inline;
   align-items: center;
@@ -18,12 +17,37 @@
   margin-left: 50px;
   margin-right: 50px;
   font-weight: bolder;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInRight 0.5s forwards;
 }
+
+/* Rest of your CSS ... */
+
+
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .carrerimgg {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
+  justify-content: flex-end;
   margin-top: -25px;
   margin-left: 100px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s 0.2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .carrerimgg img {
@@ -32,63 +56,61 @@
   padding-right: 30px;
   margin-right: 10px;
   margin-top: 90px;
+  transition: transform 0.3s;
+}
+
+.carrerimgg img:hover {
+  transform: scale(1.05);
 }
 
 .banner_description h1 {
-  text-align: left; /* Align "Hey There!" text to the left */
+  text-align: left;
   margin-left: -280px;
   font-weight: bolder;
+  transition: color 0.3s;
 }
 
 .banner_description h3 {
   font-size: medium;
   margin-top: 40px;
   line-height: 1.5;
-  
   font-weight: bolder;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s 0.4s forwards;
 }
 
 .banner_buttons {
   margin-left: 180px;
   margin-top: -70px;
-
-
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s 0.6s forwards;
 }
 
-/* CSS for button */
 .button-52 {
-  width: 200px;
+  width: 250px;
   height: 100px;
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 24px;
+  font-weight: bold;
   letter-spacing: 1px;
-  /* padding: 13px 20px 13px; */
+  padding: 20px 50px; /* Adjusted padding for larger button */
   outline: 0;
-  border: 4px solid black;
+  border: 4px solid #ffffff; /* Border color */
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff; /* Text color */
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.button-52:after {
-  content: "";
-  background-color: #ffe54c;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.button-52:hover:after {
-  top: 0px;
-  left: 0px;
+.button-52:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000; /* Text color on hover */
 }
 
 @media (min-width: 768px) {
