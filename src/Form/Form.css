@@ -32,7 +32,7 @@
 
 /* Style for the dropdown menu */
 .dropdown-menu {
-  background-color: white; /* Set the background color to white */
+  background-color: #212529; /* Set the background color to white */
   border: none; /* Remove border */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   border-radius: 5px;
@@ -44,6 +44,7 @@
 /* DropDown */
 
 .dropDownContainer {
+  /* background-color: #212529; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,29 +69,28 @@
     pointer-events: none;
     z-index: 0;
     transform: rotate(90deg);
-    color: #333333;
+    color: white;
   }
 
   .selectClass {
     position: relative;
-    border: 2px solid #333333;
+    border: 2px solid white;
     background-color: transparent;
-    color: #333333;
+    color: white;
     padding: 15px 40px 15px 15px;
-    /* font-family: "Reem Kufi", sans-serif; */
-    /* font-weight: 700; */
     line-height: 15px;
     font-size: 15px;
     outline: none;
     border-radius: 0;
     appearance: none;
     -webkit-appearance: none;
-    /* text-transform: uppercase; */
     font-weight: bold;
     letter-spacing: 0.5px;
-    /*
-          This last styling is the magic...
-      */
     text-align-last: center;
+  }
+
+  .selectClass option {
+    background-color: #212529; /* Background color */
+    color: white; /* Text color */
   }
 }

@@ -10,6 +10,7 @@
 }
 
 .banner_description {
+  color: white;
   font-family: "Roboto Mono", sans-serif;
   display: inline;
   align-items: center;
@@ -23,8 +24,6 @@
 }
 
 /* Rest of your CSS ... */
-
-
 
 @keyframes fadeInRight {
   to {

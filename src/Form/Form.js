@@ -13,8 +13,11 @@ export default function Form() {
 
   return (
     <>
-      <div className="container my-5" style={{ textAlign: "center" }}>
-        <h1>Enter Your Details</h1>
+      <div
+        className="container my-5"
+        style={{ textAlign: "center", color: "white" }}
+      >
+        <h1>Lets Get You Set Up</h1>
         <div className="mb-3 my-5">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             Name of the Candidate:<span className="required">*</span>
@@ -46,9 +49,12 @@ export default function Form() {
             />
           </div>
         </div>
-        <label htmlFor="lang">Barbaadi After</label>
+        <label htmlFor="lang">Education</label>
 
-        <div className="dropDownContainer">
+        <div
+          className="dropDownContainer"
+          style={{ backgroundColor: "#212529" }}
+        >
           <span className="select-wrapper">
             <select className="selectClass" defaultValue={"DEFAULT"}>
               <option value="DEFAULT" disabled>

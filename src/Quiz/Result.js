@@ -20,7 +20,7 @@ function Result({
   return (
     <section className="bg-dark text-white result-section">
       <div className="container">
-        <div className="row vh-100 align-items-center justify-content-center">
+        <div className="row vh-50 align-items-center justify-content-center">
           <div className="col-lg-6">
             <h1 className="mb-4 fw-bold text-center result-heading">
               Seems Like You Are Interested in:

@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
-import Banner from "./Banner/Banner";
+import Banner from "./Homepage/Homepage";
 import Quiz from "./Quiz/Quiz";
 import Form from "./Form/Form";
 import Start from "./Quiz/Start";
