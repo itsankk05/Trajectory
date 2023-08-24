@@ -5,70 +5,79 @@ export default function Footer() {
     <div>
       <footer
         className="text-center text-white"
-        style={{ backgroundColor: "#f1f1f1" }}
+        style={{ marginTop: "20px", backgroundColor: "#333333" }}
       >
         {/* <!-- Grid container --> */}
-        <div className="container pt-4">
+        <div className="container pt-4" style={{ display: "flex" }}>
           {/* <!-- Section: Social media --> */}
-          <section className="mb-4">
+          <div style={{ textAlign: "left" }}>
+            Address:
+            <br />
+            SRM Institue Of Science And Technology,
+            <br /> SRM Nagar, Kattankulathur - 603203 Chengalpattu District,
+            Tamil Nadu.
+          </div>
+          <section className="mb-4" style={{ marginLeft: "auto" }}>
             {/* <!-- Facebook --> */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
+            <div>
+              <a
+                className="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://www.facebook.com/SRMUniversityOfficial"
+                role="button"
+                data-mdb-ripple-color="dark"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
 
-            {/* <!-- Twitter --> */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
+              {/* <!-- Twitter --> */}
+              <a
+                className="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://twitter.com/SRM_Univ"
+                role="button"
+                data-mdb-ripple-color="dark"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
 
-            {/* <!-- Google --> */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i className="fab fa-google"></i>
-            </a>
+              {/* <!-- Instagram --> */}
+              <a
+                className="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://www.instagram.com/SRMUniversityOfficial/"
+                role="button"
+                data-mdb-ripple-color="dark"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
 
-            {/* <!-- Instagram --> */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-
-            {/* <!-- Linkedin --> */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            {/* <!-- Github --> */}
-            <a
-              className="btn btn-link btn-floating btn-lg text-dark m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i className="fab fa-github"></i>
-            </a>
+              {/* <!-- Linkedin --> */}
+              <a
+                className="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://www.linkedin.com/company/srm-ist-chennai/"
+                role="button"
+                data-mdb-ripple-color="dark"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              {/* <!-- Github --> */}
+              <a
+                className="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://www.youtube.com/user/SRMeducation"
+                role="button"
+                data-mdb-ripple-color="dark"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+            </div>
           </section>
           {/* <!-- Section: Social media --> */}
         </div>
@@ -76,10 +85,10 @@ export default function Footer() {
 
         {/* <!-- Copyright --> */}
         <div
-          className="text-center text-dark p-3"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+          className="text-center text-light p-3"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", color: "white" }}
         >
-          © 2020 Copyright: Developed Under
+          Developed Under SRM University{" "}
         </div>
         {/* <!-- Copyright --> */}
       </footer>

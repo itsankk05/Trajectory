@@ -2,13 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./result.css"; // Import your custom CSS
 
-function Result({
-  searchAnswer,
-  showResult,
-  quizs,
-  startOver,
-  collectedAnswers,
-}) {
+function Result({ searchAnswer, showResult, collectedAnswers }) {
   if (!showResult) {
     return null;
   }
@@ -45,7 +39,7 @@ function Result({
             <Link to="/form">
               <button
                 style={{ textDecoration: "none" }}
-                onClick={startOver}
+                // onClick={startOver}
                 className="btn py-2 px-4 btn-light fw-bold d-inline start-over-button"
               >
                 Start Over

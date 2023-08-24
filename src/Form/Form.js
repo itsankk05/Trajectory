@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { Link } from "react-router-dom";
+import Start from "../Quiz/Start";
 
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
+  // const [inputText, setInputText] = useState("");
 
+  const handleChange = (event) => {
+    // 👇 Store the input value to local state
+    setName(event.target.value);
+  };
   useEffect(() => {
     setIsFormValid(name.trim() !== "" && email.trim() !== "");
   }, [name, email]);
@@ -20,7 +26,7 @@ export default function Form() {
         <h1>Lets Get You Set Up</h1>
         <div className="mb-3 my-5">
           <label htmlFor="exampleFormControlInput1" className="form-label">
-            Name of the Candidate:<span className="required">*</span>
+            Your Name:<span className="required">*</span>
           </label>
           <div className="row d-flex justify-content-center">
             <input
@@ -28,14 +34,14 @@ export default function Form() {
               id="exampleFormControlInput1"
               placeholder="Name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
+              onChange={handleChange}
             />
+            <p>Your input: {name}</p>
           </div>
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">
-            E-Mail Address:<span className="required">*</span>
+            Where should we contact you:<span className="required">*</span>
           </label>
           <div className="row d-flex justify-content-center">
             <input
@@ -58,7 +64,7 @@ export default function Form() {
           <span className="select-wrapper">
             <select className="selectClass" defaultValue={"DEFAULT"}>
               <option value="DEFAULT" disabled>
-                Education
+                Select Education
               </option>
               <option value="1">10th Standard</option>
               <option value="2">12th Standard- Science</option>
@@ -79,6 +85,7 @@ export default function Form() {
           </button>
         </Link>
       </div>
+      <Start name={name} />
     </>
   );
 }
