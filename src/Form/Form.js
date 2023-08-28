@@ -46,7 +46,7 @@ export default function Form() {
             />
           </div>
         </div>
-        <label htmlFor="lang">Barbaadi After</label>
+       
 
         <div className="dropDownContainer">
           <span className="select-wrapper">
