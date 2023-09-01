@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Footer from "../Footer";
 
 export default function About() {
   return (
@@ -44,7 +45,10 @@ export default function About() {
             src="https://media.licdn.com/dms/image/D5603AQGUCE5hThM5Eg/profile-displayphoto-shrink_400_400/0/1689183263013?e=1697673600&v=beta&t=DLYpHkDKAKQD3NlfbcE6FVScF1ppsjw49k-bQwNb1fQ"
             alt="Jeet Shah"
           />
-          <h2>Jeet Shah</h2>
+          <h2>
+            Jeet
+            <br /> Shah
+          </h2>
           <p>Designer</p>
           <div className="social-links">
             <a
@@ -78,7 +82,10 @@ export default function About() {
             src="https://media.licdn.com/dms/image/D4E03AQGpzzSmve5rLQ/profile-displayphoto-shrink_400_400/0/1673022776367?e=1697673600&v=beta&t=jHYRe6Ryczr4ipUYoLX0cy_MyHEPxaqLTqOloPM3-3Q"
             alt="Ank Agarwal"
           />
-          <h2>Ank Agarwal</h2>
+          <h2>
+            Ank <br />
+            Agarwal
+          </h2>
           <p>Tech Enthusiast</p>
           <div className="social-links">
             <a
@@ -140,6 +147,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

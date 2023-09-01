@@ -2,13 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./result.css"; // Import your custom CSS
 
-function Result({
-  searchAnswer,
-  showResult,
-  quizs,
-  startOver,
-  collectedAnswers,
-}) {
+function Result({ searchAnswer, showResult, collectedAnswers }) {
   if (!showResult) {
     return null;
   }
@@ -20,7 +14,7 @@ function Result({
   return (
     <section className="bg-dark text-white result-section">
       <div className="container">
-        <div className="row vh-100 align-items-center justify-content-center">
+        <div className="row vh-50 align-items-center justify-content-center">
           <div className="col-lg-6">
             <h1 className="mb-4 fw-bold text-center result-heading">
               Seems Like You Are Interested in:
@@ -45,7 +39,7 @@ function Result({
             <Link to="/form">
               <button
                 style={{ textDecoration: "none" }}
-                onClick={startOver}
+                // onClick={startOver}
                 className="btn py-2 px-4 btn-light fw-bold d-inline start-over-button"
               >
                 Start Over

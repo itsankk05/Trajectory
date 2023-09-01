@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
-import Banner from "./Banner/Banner";
+import Banner from "./Homepage/Homepage";
 import Quiz from "./Quiz/Quiz";
 import Form from "./Form/Form";
 import Start from "./Quiz/Start";
@@ -8,6 +8,7 @@ import Result from "./Quiz/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import About from "./About/About";
+import { class10Sci, class10Commerce, class10Arts } from "./data";
 // import Footer from "./Footer";
 
 // import searchAnswer from "./Quiz/Function";
@@ -83,93 +84,20 @@ function App() {
   };
 
   // Start Over
-  const startOver = () => {
-    setShowStart(false);
-    setShowResult(false);
-    setShowQuiz(true);
+  // const startOver = () => {
+  //   setShowStart(true);
+  //   setShowResult(false);
+  //   setShowQuiz(false);
 
-    setSelectedAnswer("");
-    setQuestionIndex(0);
-    const wrongBtn = document.querySelector("button.bg-danger");
-    wrongBtn?.classList.remove("bg-danger");
-    const rightBtn = document.querySelector("button.bg-success");
-    rightBtn?.classList.remove("bg-success");
-  };
+  //   setSelectedAnswer("");
+  //   setQuestionIndex(0);
+  //   const wrongBtn = document.querySelector("button.bg-danger");
+  //   wrongBtn?.classList.remove("bg-danger");
+  //   const rightBtn = document.querySelector("button.bg-success");
+  //   rightBtn?.classList.remove("bg-success");
+  // };
 
   function searchAnswer(collectedAnswers) {
-    const class10Sci = [
-      "Mathematics and Science",
-      "Solving puzzles or building things",
-      "Working in a laboratory or research setting",
-      "Analyzing data and solving problems",
-      "Becoming a scientist or engineer",
-      "Mathematics and technological advancements",
-      "Complex problem-solving and logical reasoning",
-      "Engineering and computer science",
-      "Innovating and contributing to scientific advancements",
-      '"Logic will get you from A to B. Imagination will take you everywhere." - Albert Einstein',
-      "Solving intricate puzzles and mathematical challenges",
-      "By analyzing and breaking down the components logically",
-      "Laboratories and hands-on experimentation",
-      "Solving complex problems and making discoveries",
-      "Making a positive impact on individuals and society",
-      "Flexible hours with opportunities for creativity",
-      "By seeking information and researching thoroughly",
-      "Structured and organized routine",
-      "By connecting with others and learning from their experiences",
-    ];
-    const class10Commmerce = [
-      "Languages and Literature",
-      "Art and Creativity",
-      "Solving puzzles or building things",
-      "Participating in debates or discussions",
-      "Working in a quiet and focused environment",
-      "Working in a collaborative and social setting",
-      "Working in a visually creative environment",
-      "Connecting with people and understanding their perspectives",
-      "Pursuing a career in writing or journalism",
-      "Visual arts, design principles, and aesthetics",
-      "Transforming ideas into visually appealing creations",
-      "Literature and journalism",
-      "mathematical challenges",
-      "Fine arts and graphic design",
-      "Inspiring and influencing people through words",
-      "Creating visual designs and artistic projects",
-      "Flexible hours with opportunities for creativity",
-      "Structured and organized routine",
-      "Understanding diverse perspectives and helping others",
-      '"The pen is mightier than the sword." - Edward Bulwer-Lytton',
-      "By connecting with others and learning from their experiences",
-    ];
-    const class10Arts = [
-      "Social Studies and History",
-      "Art and Creativity",
-      "Reading books or writing stories",
-      "Participating in debates or discussions",
-      "Drawing, painting, or crafting",
-      "Working in a quiet and focused environment",
-      "Working in a collaborative and social setting",
-      "Working in a visually creative environment",
-      "Expressing thoughts clearly in writing",
-      "Visualizing and creating artistic designs",
-      "Pursuing a career in writing or journalism",
-      "Working in a field related to human behavior or society",
-      "Exploring careers in the arts or design",
-      "History, cultures, and societal dynamics",
-      "Literature and journalism",
-      "Psychology and social work",
-      "Bringing positive changes to individuals and communities",
-      "Enriching lives through creative expressions",
-      "Interacting with people and understanding their emotions",
-      "By using your imagination and thinking creatively",
-      "Flexible hours with opportunities for creativity",
-      "Literature, language, and communication",
-      '"Art enables us to find ourselves and lose ourselves at the same time." - Thomas Merton',
-      '"Empathy is seeing with the eyes of another, listening with the ears of another, and feeling with the heart of another." - Alfred Adler',
-      "Helping others in a dynamic and changing environment",
-      "Studios or workshops for hands-on creative work",
-    ];
-
     let class10PointsScience = 0;
     let class10PointsCommerce = 0;
     let class10PointsArts = 0;
@@ -181,7 +109,7 @@ function App() {
 
         class10PointsScience += 1;
       }
-      if (class10Commmerce.includes(collectedAnswers[i])) {
+      if (class10Commerce.includes(collectedAnswers[i])) {
         class10PointsCommerce += 1;
         console.table(`Found match for: ${collectedAnswers[i]}`);
       }
@@ -243,7 +171,7 @@ function App() {
                 searchAnswer={searchAnswer}
                 showResult={showResult}
                 quizs={quizs}
-                startOver={startOver}
+                // startOver={startOver}
               />
             }
           />
