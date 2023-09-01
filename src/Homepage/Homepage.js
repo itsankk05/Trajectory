@@ -7,7 +7,6 @@ export default function Banner() {
     <header className="banner">
       <div className="mainpagecontent">
         <div className="banner_description">
-          <h1>Hey There!</h1>
           <h3>
             Discover Your Path: Embark on a personalized journey towards your
             dream career. Whether you're in 10th grade, 12th grade, or college,

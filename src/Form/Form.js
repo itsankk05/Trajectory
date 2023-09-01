@@ -1,21 +1,30 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { Link } from "react-router-dom";
-import Start from "../Quiz/Start";
 
-export default function Form() {
-  const [name, setName] = useState("");
+export default function Form({
+  name,
+  setName,
+  selectedEducation,
+  setSelectedEducation,
+}) {
   const [email, setEmail] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
-  // const [inputText, setInputText] = useState("");
 
   const handleChange = (event) => {
     // 👇 Store the input value to local state
     setName(event.target.value);
   };
+
+  const handleEducationChange = (event) => {
+    setSelectedEducation(event.target.value); // Update the selected education
+  };
+
   useEffect(() => {
-    setIsFormValid(name.trim() !== "" && email.trim() !== "");
-  }, [name, email]);
+    setIsFormValid(
+      name.trim() !== "" && email.trim() !== "" && selectedEducation !== ""
+    );
+  }, [name, email, selectedEducation]);
 
   return (
     <>
@@ -36,7 +45,6 @@ export default function Form() {
               value={name}
               onChange={handleChange}
             />
-            <p>Your input: {name}</p>
           </div>
         </div>
         <div className="mb-3">
@@ -61,7 +69,11 @@ export default function Form() {
           style={{ backgroundColor: "#212529" }}
         >
           <span className="select-wrapper">
-            <select className="selectClass" defaultValue={"DEFAULT"}>
+            <select
+              className="selectClass"
+              defaultValue={"DEFAULT"}
+              onChange={handleEducationChange}
+            >
               <option value="DEFAULT" disabled>
                 Select Education
               </option>
@@ -79,12 +91,12 @@ export default function Form() {
             className="btn btn-outline-primary"
             disabled={!isFormValid}
             style={{ marginTop: "15px", width: "200px", height: "50px" }}
+            // onClick={console.log(selectedEducation)}
           >
             Submit
           </button>
         </Link>
       </div>
-      <Start name={name} />
     </>
   );
 }
