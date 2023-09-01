@@ -9,17 +9,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import About from "./About/About";
 import { class10Sci, class10Commerce, class10Arts } from "./data";
-// import Footer from "./Footer";
-
-// import searchAnswer from "./Quiz/Function";
 
 function App() {
-  // const [answer, setAnswer] = useState([]);
-  const [quizs, setQuizs] = useState([]);
-  const [question, setQuesion] = useState({});
   const [questionIndex, setQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [collectedAnswers, setCollectedAnswers] = useState([]);
+  const [name, setName] = useState("");
+  const [selectedEducation, setSelectedEducation] = useState("");
 
   // Display Controlling States
   const [showStart, setShowStart] = useState(true);
@@ -27,18 +23,29 @@ function App() {
   const [showResult, setShowResult] = useState(false);
 
   // Load JSON Data
-  useEffect(() => {
-    fetch("quiz.json")
-      .then((res) => res.json())
-      .then((data) => setQuizs(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("quiz.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setQuizs(data);
+  //     });
+  // }, []);
 
-  // Set a Single Question
-  useEffect(() => {
-    if (quizs.length > questionIndex) {
-      setQuesion(quizs[questionIndex]);
-    }
-  }, [quizs, questionIndex]);
+  // useEffect(() => {
+  //   setQuiz12Science(quiz12Science);
+  // }, [quiz12Science]);
+
+  // useEffect(() => {
+  //   fetch("quiz12Commerce.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setQuiz12Commerce(data));
+  // }, []);
+
+  // useEffect(() => {
+  //   fetch("quiz12Arts.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setQuiz12Arts(data));
+  // }, []);
 
   // Start Quiz
   const startQuiz = () => {
@@ -83,20 +90,6 @@ function App() {
     setShowQuiz(false);
   };
 
-  // Start Over
-  // const startOver = () => {
-  //   setShowStart(true);
-  //   setShowResult(false);
-  //   setShowQuiz(false);
-
-  //   setSelectedAnswer("");
-  //   setQuestionIndex(0);
-  //   const wrongBtn = document.querySelector("button.bg-danger");
-  //   wrongBtn?.classList.remove("bg-danger");
-  //   const rightBtn = document.querySelector("button.bg-success");
-  //   rightBtn?.classList.remove("bg-success");
-  // };
-
   function searchAnswer(collectedAnswers) {
     let class10PointsScience = 0;
     let class10PointsCommerce = 0;
@@ -117,7 +110,6 @@ function App() {
         class10PointsArts += 1;
         console.table(`Found match for: ${collectedAnswers[i]}`);
       }
-      // Add similar logic for other categories if needed
     }
 
     // Determine the ranking
@@ -137,22 +129,41 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Banner />} />
-          <Route exact path="/form" element={<Form />} />
+
+          {/* FORM COMPONENT */}
+          <Route
+            exact
+            path="/form"
+            element={
+              <Form
+                name={name}
+                setName={setName}
+                selectedEducation={selectedEducation}
+                setSelectedEducation={setSelectedEducation}
+              />
+            }
+          />
+
+          {/* START COMPONENT */}
           <Route
             exact
             path="/start"
-            element={<Start startQuiz={startQuiz} showStart={showStart} />}
+            element={
+              <Start startQuiz={startQuiz} showStart={showStart} name={name} />
+            }
           />
+
+          {/* QUIZ COMPONENT */}
           <Route
             exact
             path="/quiz"
             element={
               <Quiz
+                setSelectedEducation={setSelectedEducation}
+                selectedEducation={selectedEducation}
                 collectedAnswers={collectedAnswers}
                 storeAnswer={storeAnswer}
                 showQuiz={showQuiz}
-                question={question}
-                quizs={quizs}
                 checkAnswer={checkAnswer}
                 selectedAnswer={selectedAnswer}
                 setSelectedAnswer={setSelectedAnswer}
@@ -162,6 +173,8 @@ function App() {
               />
             }
           />
+
+          {/* RESULT COMPONENT */}
           <Route
             exact
             path="/result"
@@ -170,14 +183,13 @@ function App() {
                 collectedAnswers={collectedAnswers}
                 searchAnswer={searchAnswer}
                 showResult={showResult}
-                quizs={quizs}
+                // quizs={quizs}
                 // startOver={startOver}
               />
             }
           />
           <Route exact path="/about" element={<About />} />
         </Routes>
-        {/* , <Footer /> */}
       </Router>
     </div>
   );

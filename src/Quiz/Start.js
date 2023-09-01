@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Start = ({ startQuiz, showStart, name }) => {
-  console.log(name);
   return (
     <section
       className="text-white text-center bg-dark"
