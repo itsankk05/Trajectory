@@ -1,22 +1,152 @@
 [
   {
-    "id": "01",
-    "question": "What subjects are you most interested in?",
+    "id": "1",
+    "question": "What aspect of commerce interests you the most?",
     "options": [
-      "Mathematics and Science",
-      "Languages and Literature",
-      "Social Studies and History",
-      "Art and Creativity"
+      "Financial analysis and management",
+      "Marketing and consumer behavior",
+      "Entrepreneurship and business innovation",
+      "Economics and market trends"
     ]
   },
   {
-    "id": "02",
-    "question": "Which activities do you enjoy the most during your free time?",
+    "id": "2",
+    "question": "Which of the following skills do you consider your strength?",
     "options": [
-      "Solving puzzles or building things",
-      "Reading books or writing stories",
-      "Participating in debates or discussions",
-      "Drawing, painting, or crafting"
+      "Analyzing financial data and making informed decisions",
+      "Persuading and communicating effectively",
+      "Identifying opportunities and taking calculated risks",
+      "Understanding economic theories and trends"
+    ]
+  },
+  {
+    "id": "3",
+    "question": "What kind of business environment appeals to you?",
+    "options": [
+      "Corporate boardrooms and financial institutions",
+      "Engaging with customers and building brand presence",
+      "Starting and running your own business venture",
+      "Researching economic policies and market dynamics"
+    ]
+  },
+  {
+    "id": "4",
+    "question": "Which role in finance interests you the most?",
+    "options": [
+      "Investment banker",
+      "Financial analyst",
+      "Accountant",
+      "Financial planner"
+    ]
+  },
+  {
+    "id": "5",
+    "question": "What do you enjoy reading or learning about in commerce?",
+    "options": [
+      "Stock markets and investment strategies",
+      "Consumer behavior and marketing campaigns",
+      "Entrepreneurial success stories and start-ups",
+      "Economic theories and global trade"
+    ]
+  },
+  {
+    "id": "6",
+    "question": "What kind of challenges do you find appealing in the business world?",
+    "options": [
+      "Analyzing complex financial situations and making predictions",
+      "Crafting effective advertising and promotional strategies",
+      "Navigating the uncertainties of a competitive market",
+      "Understanding the impacts of economic policies on businesses"
+    ]
+  },
+  {
+    "id": "7",
+    "question": "What future impact do you aspire to have through your career?",
+    "options": [
+      "Making wise financial decisions for individuals and organizations",
+      "Shaping consumer preferences and brand perception",
+      "Innovating and contributing to business growth",
+      "Contributing to economic stability and prosperity"
+    ]
+  },
+  {
+    "id": "8",
+    "question": "Which business figure inspires you the most?",
+    "options": [
+      "Warren Buffett",
+      "Steve Jobs",
+      "Richard Branson",
+      "Mark Zuckerberg"
+    ]
+  },
+  {
+    "id": "9",
+    "question": "What do you value the most in a career?",
+    "options": [
+      "Financial stability and growth opportunities",
+      "Creativity and the ability to influence people",
+      "Independence and the potential for high rewards",
+      "Contributing to societal and economic well-being"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "Which quote resonates with your career aspirations?",
+    "options": [
+      "\"The best investment you can make is in yourself.\" - Warren Buffett",
+      "\"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.\" - Steve Jobs",
+      "\"Screw it, let's do it.\" - Richard Branson",
+      "\"In the long run, the market is a weighing machine; in the short run, it is a voting machine.\" - Benjamin Graham"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "What area of business do you see yourself excelling in?",
+    "options": [
+      "Financial planning and analysis",
+      "Brand management and marketing",
+      "Start-up entrepreneurship",
+      "Economic research and policy analysis"
+    ]
+  },
+  {
+    "id": "12",
+    "question": "How do you handle financial challenges in your personal life?",
+    "options": [
+      "Budgeting and careful financial planning",
+      "Negotiating and finding cost-effective solutions",
+      "Taking calculated risks for potential rewards",
+      "Analyzing economic trends and making informed decisions"
+    ]
+  },
+  {
+    "id": "13",
+    "question": "What type of business role sounds the most appealing?",
+    "options": [
+      "Chief Financial Officer (CFO)",
+      "Marketing Manager",
+      "Founder/CEO of your own business",
+      "Economist or Economic Analyst"
+    ]
+  },
+  {
+    "id": "14",
+    "question": "How do you view the relationship between business and society?",
+    "options": [
+      "Business decisions impact financial outcomes primarily",
+      "Business decisions influence consumer behavior and trends",
+      "Business plays a crucial role in societal progress and innovation",
+      "Business is closely tied to economic stability and growth"
+    ]
+  },
+  {
+    "id": "15",
+    "question": "What is your preferred approach to problem-solving in a business context?",
+    "options": [
+      "Analyzing data and numbers to find solutions",
+      "Developing creative and persuasive strategies",
+      "Seeking new opportunities and taking initiative",
+      "Evaluating economic factors and their implications"
     ]
   }
 ]
