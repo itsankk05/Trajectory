@@ -1,22 +1,352 @@
 [
   {
-    "id": "01",
-    "question": "What subjects are you most interested in?",
+    "id": "16",
+    "question": "When faced with a complex problem, which approach resonates with you?",
     "options": [
-      "Mathematics and Science",
-      "Languages and Literature",
-      "Social Studies and History",
-      "Art and Creativity"
+      "Experimentation and observation",
+      "Analyzing chemical compositions and reactions",
+      "Examining biological processes and organisms",
+      "Employing mathematical reasoning and calculations"
     ]
   },
   {
-    "id": "02",
-    "question": "Which activities do you enjoy the most during your free time?",
+    "id": "17",
+    "question": "Which historical scientist or discovery inspires you the most?",
     "options": [
-      "Solving puzzles or building things",
-      "Reading books or writing stories",
-      "Participating in debates or discussions",
-      "Drawing, painting, or crafting"
+      "Isaac Newton and his laws of motion",
+      "Marie Curie's pioneering work on radioactivity",
+      "Charles Darwin and his theory of evolution",
+      "Leonhard Euler's contributions to mathematics"
+    ]
+  },
+  {
+    "id": "18",
+    "question": "How do you feel about the prospect of working in a laboratory setting?",
+    "options": [
+      "Excited about conducting experiments and research",
+      "Interested in analyzing chemical substances",
+      "Enthusiastic about studying living organisms",
+      "Eager to apply mathematical models in lab experiments"
+    ]
+  },
+  {
+    "id": "19",
+    "question": "What do you find most intriguing about the natural world?",
+    "options": [
+      "The behavior of particles at the quantum level",
+      "The properties and interactions of chemical elements",
+      "The diversity and adaptation of species in ecosystems",
+      "The mathematical patterns underlying physical phenomena"
+    ]
+  },
+  {
+    "id": "20",
+    "question": "If you could choose any field trip, which would you prefer?",
+    "options": [
+      "Visiting an observatory and exploring the cosmos",
+      "Touring a pharmaceutical research lab",
+      "Going on a wildlife expedition in a rainforest",
+      "Visiting a mathematics research institute"
+    ]
+  },
+  {
+    "id": "21",
+    "question": "Which scientific concept or theory captures your imagination?",
+    "options": [
+      "Black holes and their gravitational effects",
+      "Chemical bonding and molecular structures",
+      "DNA and genetic inheritance",
+      "Chaos theory and fractals"
+    ]
+  },
+  {
+    "id": "22",
+    "question": "How do you feel about working collaboratively with other scientists?",
+    "options": [
+      "Excited about sharing ideas and discoveries",
+      "Interested in collaborating on chemical experiments",
+      "Enthusiastic about interdisciplinary research",
+      "Eager to collaborate on mathematical modeling projects"
+    ]
+  },
+  {
+    "id": "23",
+    "question": "Which scientific achievement do you believe has had the most significant impact on society?",
+    "options": [
+      "The theory of relativity and its technological applications",
+      "The development of antibiotics",
+      "The discovery of DNA's structure",
+      "The invention of computers and algorithms"
+    ]
+  },
+  {
+    "id": "24",
+    "question": "What do you enjoy discussing with friends and peers?",
+    "options": [
+      "The mysteries of the universe and space exploration",
+      "Recent advancements in chemistry and materials science",
+      "Topics related to biology, health, and genetics",
+      "Mathematical puzzles and problem-solving strategies"
+    ]
+  },
+  {
+    "id": "25",
+    "question": "How do you approach learning new concepts or theories?",
+    "options": [
+      "By visualizing and understanding their real-world implications",
+      "By conducting hands-on experiments and observations",
+      "By exploring their relevance to living organisms",
+      "By delving into abstract mathematical proofs and derivations"
+    ]
+  },
+  {
+    "id": "26",
+    "question": "Which aspect of your current science courses excites you the most?",
+    "options": [
+      "Learning about the fundamental laws of nature",
+      "Conducting chemical experiments and reactions",
+      "Studying the intricacies of biological systems",
+      "Solving challenging mathematical problems"
+    ]
+  },
+  {
+    "id": "27",
+    "question": "What's your view on the intersection of science and technology?",
+    "options": [
+      "Excited about technological advancements in scientific research",
+      "Enthusiastic about the role of technology in chemical analysis",
+      "Interested in how tech aids in biological research",
+      "Eager to explore the synergy between math and technology"
+    ]
+  },
+  {
+    "id": "28",
+    "question": "Which area of science do you think is most relevant to addressing climate change?",
+    "options": [
+      "Climate modeling and atmospheric sciences",
+      "Sustainable materials and green chemistry",
+      "Ecological research and biodiversity conservation",
+      "Data analysis and mathematical modeling for climate predictions"
+    ]
+  },
+  {
+    "id": "29",
+    "question": "When solving a problem, what drives you the most?",
+    "options": [
+      "The pursuit of deeper scientific understanding",
+      "The desire to develop new compounds and materials",
+      "The goal of improving human health and well-being",
+      "The challenge of applying mathematical principles effectively"
+    ]
+  },
+  {
+    "id": "30",
+    "question": "Which historical figure from the world of science do you admire the most?",
+    "options": [
+      "Albert Einstein",
+      "Dmitri Mendeleev",
+      "Rosalind Franklin",
+      "Carl Friedrich Gauss"
+    ]
+  },
+  {
+    "id": "31",
+    "question": "How do you feel about conducting fieldwork or outdoor research?",
+    "options": [
+      "Excited about studying natural phenomena in the field",
+      "Interested in fieldwork related to chemistry",
+      "Enthusiastic about observing wildlife and ecosystems",
+      "Eager to use mathematical tools in real-world data collection"
+    ]
+  },
+  {
+    "id": "32",
+    "question": "Which scientific journal or publication would you be most likely to subscribe to?",
+    "options": [
+      "Physics Today",
+      "Journal of Chemical Education",
+      "Nature",
+      "Journal of Mathematical Sciences"
+    ]
+  },
+  {
+    "id": "33",
+    "question": "What do you value most in a potential career?",
+    "options": [
+      "Pursuing your scientific passion to the fullest",
+      "Contributing to advancements in chemistry and materials",
+      "Making a difference in healthcare and genetics",
+      "Applying mathematical expertise to address complex challenges"
+    ]
+  },
+  {
+    "id": "34",
+    "question": "Which area of science do you believe has the potential to transform industries?",
+    "options": [
+      "Nanotechnology and materials science",
+      "Chemical engineering and pharmaceuticals",
+      "Biotechnology and genetics",
+      "Data science and computational mathematics"
+    ]
+  },
+  {
+    "id": "35",
+    "question": "How do you envision using your scientific knowledge to benefit society?",
+    "options": [
+      "By advancing our understanding of the universe",
+      "By developing innovative solutions to global challenges",
+      "By improving healthcare and quality of life",
+      "By optimizing processes and systems through mathematics and data analysis"
+    ]
+  },
+  {
+    "id": "36",
+    "question": "What role does creativity play in your approach to problem-solving?",
+    "options": [
+      "I enjoy thinking creatively to solve scientific puzzles.",
+      "I prefer a structured and analytical approach.",
+      "I value creative thinking in biological research.",
+      "I apply creativity to mathematical problem-solving."
+    ]
+  },
+  {
+    "id": "37",
+    "question": "Which recent scientific breakthrough caught your attention?",
+    "options": [
+      "Gravitational waves detection",
+      "CRISPR gene editing technology",
+      "Advancements in personalized medicine",
+      "Quantum computing developments"
+    ]
+  },
+  {
+    "id": "38",
+    "question": "How do you feel about the possibility of traveling to remote field sites for research?",
+    "options": [
+      "Excited about exploring distant natural environments",
+      "Interested if it involves chemical analysis",
+      "Enthusiastic about studying unique ecosystems",
+      "Eager if it involves mathematical modeling in the field"
+    ]
+  },
+  {
+    "id": "39",
+    "question": "Which famous scientific experiment or study would you like to replicate?",
+    "options": [
+      "The double-slit experiment in quantum physics",
+      "The Miller-Urey experiment on the origins of life",
+      "Mendel's pea plant genetics experiments",
+      "The Monty Hall problem in probability theory"
+    ]
+  },
+  {
+    "id": "40",
+    "question": "What role does ethics play in your scientific interests?",
+    "options": [
+      "I'm concerned about ethical implications in space exploration.",
+      "Ethics are crucial in chemical research and safety.",
+      "Ethical considerations are important in biology and genetics.",
+      "Ethics play a role in mathematical decision-making."
+    ]
+  },
+  {
+    "id": "41",
+    "question": "How do you approach presenting your research findings to a broader audience?",
+    "options": [
+      "I enjoy sharing the wonders of the cosmos with the public.",
+      "I like explaining chemical discoveries in simple terms.",
+      "I'm passionate about communicating biological insights.",
+      "I find joy in presenting mathematical concepts to others."
+    ]
+  },
+  {
+    "id": "42",
+    "question": "Which scientific debate or controversy intrigues you the most?",
+    "options": [
+      "The nature of dark matter and dark energy",
+      "The ethical debates surrounding genetic editing",
+      "The discussions on biodiversity conservation",
+      "The debates on the foundations of mathematics"
+    ]
+  },
+  {
+    "id": "43",
+    "question": "What motivates you to stay up-to-date with scientific advancements?",
+    "options": [
+      "The thrill of being at the forefront of knowledge",
+      "The potential for groundbreaking chemical discoveries",
+      "The desire to contribute to evolving biological fields",
+      "The challenge of keeping up with mathematical innovations"
+    ]
+  },
+  {
+    "id": "44",
+    "question": "How do you approach uncertainty and unpredictability in your work?",
+    "options": [
+      "I embrace uncertainty as an opportunity for discovery.",
+      "I work to minimize uncertainty through rigorous experimentation.",
+      "I adapt to unpredictability in biological systems.",
+      "I use mathematical models to manage uncertainty."
+    ]
+  },
+  {
+    "id": "45",
+    "question": "Which fictional scientist or science-related story resonates with you?",
+    "options": [
+      "Carl Sagan's 'Cosmos' and the sense of wonder it conveys",
+      "The chemical transformations in 'Breaking Bad'",
+      "Michael Crichton's 'Jurassic Park' and genetic engineering",
+      "The mathematical challenges in 'A Beautiful Mind'"
+    ]
+  },
+  {
+    "id": "46",
+    "question": "How do you feel about the potential for AI and machine learning in science?",
+    "options": [
+      "Excited about AI's role in analyzing astronomical data",
+      "Interested in AI applications for chemical research",
+      "Enthusiastic about AI's impact on biological data analysis",
+      "Eager to explore AI-driven mathematical modeling"
+    ]
+  },
+  {
+    "id": "47",
+    "question": "Which scientific event or achievement would you like to witness in your lifetime?",
+    "options": [
+      "The discovery of extraterrestrial life",
+      "A breakthrough in renewable energy technology",
+      "A major advancement in curing diseases",
+      "The proof of a famous mathematical conjecture"
+    ]
+  },
+  {
+    "id": "48",
+    "question": "How important is interdisciplinary collaboration in your view?",
+    "options": [
+      "I believe in combining physics and other sciences for holistic understanding.",
+      "Interdisciplinary teamwork can lead to innovative chemical solutions.",
+      "Collaboration in biology and related fields is essential.",
+      "I see value in interdisciplinary mathematical research."
+    ]
+  },
+  {
+    "id": "49",
+    "question": "Which aspect of science communication do you find most compelling?",
+    "options": [
+      "Explaining the mysteries of the universe to the public",
+      "Breaking down complex chemical concepts for a wider audience",
+      "Sharing the wonders of biology and genetics with others",
+      "Making abstract mathematical ideas accessible to non-mathematicians"
+    ]
+  },
+  {
+    "id": "50",
+    "question": "How do you envision contributing to the greater scientific community?",
+    "options": [
+      "By making groundbreaking contributions to scientific theory",
+      "By developing practical applications in chemistry",
+      "By advancing our understanding of life and health",
+      "By solving complex real-world problems through mathematics and data analysis"
     ]
   }
 ]
