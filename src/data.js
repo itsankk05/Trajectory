@@ -73,3 +73,19 @@ export const class10Arts = [
   "Helping others in a dynamic and changing environment",
   "Studios or workshops for hands-on creative work",
 ];
+
+//Class 12 Science
+export const engineering = [];
+export const medical = [];
+// export const engineering = [];
+
+//Class 12 Commerece
+export const CA = [];
+export const BBA = [];
+export const bCom = [];
+export const LLB = [];
+export const CFA = [];
+export const BAinEco = [];
+export const BMS = [];
+
+//Class 12 Arts

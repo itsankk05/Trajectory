@@ -6,9 +6,22 @@ import Form from "./Form/Form";
 import Start from "./Quiz/Start";
 import Result from "./Quiz/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import About from "./About/About";
-import { class10Sci, class10Commerce, class10Arts } from "./data";
+import {
+  class10Sci,
+  class10Commerce,
+  class10Arts,
+  engineering,
+  medical,
+  CA,
+  BBA,
+  bCom,
+  LLB,
+  CFA,
+  BAinEco,
+  BMS,
+} from "./data";
 
 function App() {
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -98,7 +111,54 @@ function App() {
       rankings.sort((a, b) => b.points - a.points);
       // Return the rankings
       return rankings;
-    } else if (selectedEducation == 2) {
+    }
+
+    //Science ElseIf Statements
+    else if (selectedEducation == 2) {
+      let engineeringPoints = 0;
+      let medicalPoints = 0;
+      for (let i = 0; i < collectedAnswers.length; i++) {
+        if (engineering.includes(collectedAnswers[i])) {
+          engineeringPoints += 1;
+        }
+        if (medical.includes(collectedAnswers[i])) {
+          medicalPoints += 1;
+        }
+      }
+    }
+
+    //Commerece ElseIf Statements
+    else if (selectedEducation == 3) {
+      let caPoints = 0;
+      let baPoints = 0;
+      let cfaPoints = 0;
+      let bcomPoints = 0;
+      let bbaPoints = 0;
+      let bmsPoints = 0;
+      let llbPoints = 0;
+      for (let i = 0; i < collectedAnswers.length; i++) {
+        if (CA.includes(collectedAnswers[i])) {
+          caPoints += 1;
+        }
+        if (BBA.includes(collectedAnswers[i])) {
+          bbaPoints += 1;
+        }
+        if (bCom.includes(collectedAnswers[i])) {
+          bcomPoints += 1;
+        }
+        if (LLB.includes(collectedAnswers[i])) {
+          llbPoints += 1;
+        }
+        if (CFA.includes(collectedAnswers[i])) {
+          cfaPoints += 1;
+        }
+        if (BAinEco.includes(collectedAnswers[i])) {
+          baPoints += 1;
+        }
+        if (BMS.includes(collectedAnswers[i])) {
+          bmsPoints += 1;
+        }
+      }
     }
   }
   return (
