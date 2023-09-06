@@ -1,3 +1,4 @@
+/* Base styles for the header */
 .banner {
   text-align: left;
   background-size: cover;
@@ -22,8 +23,6 @@
   transform: translateX(-20px);
   animation: fadeInRight 0.5s forwards;
 }
-
-/* Rest of your CSS ... */
 
 @keyframes fadeInRight {
   to {
@@ -112,8 +111,32 @@
   color: #000000; /* Text color on hover */
 }
 
-@media (min-width: 768px) {
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .banner_description h3 {
+    font-size: 18px;
+    margin-bottom: 20px; /* Add margin to separate text from button */
+  }
+
   .button-52 {
-    padding: 13px 50px 13px;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+
+  .mainpagecontent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner_buttons {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .carrerimgg {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
