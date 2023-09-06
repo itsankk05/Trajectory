@@ -1,7 +1,482 @@
 [
   {
-    "id": "01",
-    "question": "What subjects are you most interested in?",
+    "id": "1",
+    "question": "What aspect of commerce interests you the most?",
+    "options": [
+      "Financial analysis and management",
+      "Marketing and consumer behavior",
+      "Entrepreneurship and business innovation",
+      "Economics and market trends"
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Which of the following skills do you consider your strength?",
+    "options": [
+      "Analyzing financial data and making informed decisions",
+      "Persuading and communicating effectively",
+      "Identifying opportunities and taking calculated risks",
+      "Understanding economic theories and trends"
+    ]
+  },
+  {
+    "id": "3",
+    "question": "What kind of business environment appeals to you?",
+    "options": [
+      "Corporate boardrooms and financial institutions",
+      "Engaging with customers and building brand presence",
+      "Starting and running your own business venture",
+      "Researching economic policies and market dynamics"
+    ]
+  },
+  {
+    "id": "4",
+    "question": "Which role in finance interests you the most?",
+    "options": [
+      "Investment banker",
+      "Financial analyst",
+      "Accountant",
+      "Financial planner"
+    ]
+  },
+  {
+    "id": "5",
+    "question": "What do you enjoy reading or learning about in commerce?",
+    "options": [
+      "Stock markets and investment strategies",
+      "Consumer behavior and marketing campaigns",
+      "Entrepreneurial success stories and start-ups",
+      "Economic theories and global trade"
+    ]
+  },
+  {
+    "id": "6",
+    "question": "What kind of challenges do you find appealing in the business world?",
+    "options": [
+      "Analyzing complex financial situations and making predictions",
+      "Crafting effective advertising and promotional strategies",
+      "Navigating the uncertainties of a competitive market",
+      "Understanding the impacts of economic policies on businesses"
+    ]
+  },
+  {
+    "id": "7",
+    "question": "What future impact do you aspire to have through your career?",
+    "options": [
+      "Making wise financial decisions for individuals and organizations",
+      "Shaping consumer preferences and brand perception",
+      "Innovating and contributing to business growth",
+      "Contributing to economic stability and prosperity"
+    ]
+  },
+  {
+    "id": "8",
+    "question": "Which business figure inspires you the most?",
+    "options": [
+      "Warren Buffett",
+      "Steve Jobs",
+      "Richard Branson",
+      "Mark Zuckerberg"
+    ]
+  },
+  {
+    "id": "9",
+    "question": "What do you value the most in a career?",
+    "options": [
+      "Financial stability and growth opportunities",
+      "Creativity and the ability to influence people",
+      "Independence and the potential for high rewards",
+      "Contributing to societal and economic well-being"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "Which quote resonates with your career aspirations?",
+    "options": [
+      "\"The best investment you can make is in yourself.\" - Warren Buffett",
+      "\"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.\" - Steve Jobs",
+      "\"Screw it, let's do it.\" - Richard Branson",
+      "\"In the long run, the market is a weighing machine; in the short run, it is a voting machine.\" - Benjamin Graham"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "What area of business do you see yourself excelling in?",
+    "options": [
+      "Financial planning and analysis",
+      "Brand management and marketing",
+      "Start-up entrepreneurship",
+      "Economic research and policy analysis"
+    ]
+  },
+  {
+    "id": "12",
+    "question": "How do you handle financial challenges in your personal life?",
+    "options": [
+      "Budgeting and careful financial planning",
+      "Negotiating and finding cost-effective solutions",
+      "Taking calculated risks for potential rewards",
+      "Analyzing economic trends and making informed decisions"
+    ]
+  },
+  {
+    "id": "13",
+    "question": "What type of business role sounds the most appealing?",
+    "options": [
+      "Chief Financial Officer (CFO)",
+      "Marketing Manager",
+      "Founder/CEO of your own business",
+      "Economist or Economic Analyst"
+    ]
+  },
+  {
+    "id": "14",
+    "question": "How do you view the relationship between business and society?",
+    "options": [
+      "Business decisions impact financial outcomes primarily",
+      "Business decisions influence consumer behavior and trends",
+      "Business plays a crucial role in societal progress and innovation",
+      "Business is closely tied to economic stability and growth"
+    ]
+  },
+  {
+    "id": "15",
+    "question": "What is your preferred approach to problem-solving in a business context?",
+    "options": [
+      "Analyzing data and numbers to find solutions",
+      "Developing creative and persuasive strategies",
+      "Seeking new opportunities and taking initiative",
+      "Evaluating economic factors and their implications"
+    ]
+  },
+  {
+    "id": "16",
+    "question": "Which of these best describes your interest in numbers?",
+    "options": [
+      "I enjoy working with financial data and numbers.",
+      "I prefer working with words and ideas.",
+      "I'm comfortable with numbers but also enjoy creativity.",
+      "I prefer analyzing economic data."
+    ]
+  },
+  {
+    "id": "17",
+    "question": "What's your preferred work environment?",
+    "options": [
+      "I like a structured corporate setting.",
+      "I thrive in dynamic and customer-facing environments.",
+      "I want to build my own business from the ground up.",
+      "I'm interested in research and policy analysis."
+    ]
+  },
+  {
+    "id": "18",
+    "question": "What aspect of business strategy appeals to you?",
+    "options": [
+      "Financial planning and investment strategies",
+      "Developing and executing marketing plans",
+      "Crafting a business plan and strategy",
+      "Analyzing economic factors for strategic decisions"
+    ]
+  },
+  {
+    "id": "19",
+    "question": "What motivates you in your career?",
+    "options": [
+      "Achieving financial success and stability",
+      "Influencing consumer behavior and preferences",
+      "Creating something new and impactful",
+      "Contributing to economic growth and stability"
+    ]
+  },
+  {
+    "id": "20",
+    "question": "Which industry intrigues you the most?",
+    "options": [
+      "Finance and investment",
+      "Retail and consumer goods",
+      "Technology and startups",
+      "Government and economic policy"
+    ]
+  },
+  {
+    "id": "21",
+    "question": "Which aspect of marketing do you find most interesting?",
+    "options": [
+      "Market research and data analysis",
+      "Creative content and branding",
+      "Building customer relationships",
+      "Analyzing market trends and competition"
+    ]
+  },
+  {
+    "id": "22",
+    "question": "How do you handle risk in decision-making?",
+    "options": [
+      "I prefer low-risk, conservative approaches.",
+      "I'm willing to take calculated risks.",
+      "I embrace risk for potential rewards.",
+      "I analyze risks from an economic perspective."
+    ]
+  },
+  {
+    "id": "23",
+    "question": "What kind of projects do you enjoy working on?",
+    "options": [
+      "Financial modeling and forecasting",
+      "Advertising and promotional campaigns",
+      "Startup business plans and pitches",
+      "Economic impact assessments"
+    ]
+  },
+  {
+    "id": "24",
+    "question": "How do you envision your long-term career?",
+    "options": [
+      "Climbing the corporate ladder in finance.",
+      "Becoming a marketing or brand expert.",
+      "Launching and growing my own business.",
+      "Shaping economic policies and trends."
+    ]
+  },
+  {
+    "id": "25",
+    "question": "What area of commerce do you see yourself making a difference in?",
+    "options": [
+      "Investment and portfolio management",
+      "Market research and consumer insights",
+      "Disruptive innovation and entrepreneurship",
+      "Economic analysis and forecasting"
+    ]
+  },
+  {
+    "id": "26",
+    "question": "How do you handle financial setbacks in your personal life?",
+    "options": [
+      "Careful budgeting and saving.",
+      "Finding creative ways to generate income.",
+      "Viewing setbacks as learning opportunities.",
+      "Adjusting my financial strategy based on the economy."
+    ]
+  },
+  {
+    "id": "27",
+    "question": "What excites you about business leadership?",
+    "options": [
+      "Making strategic financial decisions.",
+      "Inspiring and leading teams.",
+      "Pioneering new business ventures.",
+      "Influencing economic policies."
+    ]
+  },
+  {
+    "id": "28",
+    "question": "What role does ethics play in your decision-making?",
+    "options": [
+      "Ethical considerations are essential.",
+      "Ethical choices enhance brand reputation.",
+      "Ethics matter, but innovation drives me.",
+      "Economic implications often take precedence."
+    ]
+  },
+  {
+    "id": "29",
+    "question": "How do you approach market analysis?",
+    "options": [
+      "Thoroughly examining financial data.",
+      "Understanding consumer behavior and preferences.",
+      "Identifying gaps and creating new markets.",
+      "Analyzing economic indicators and trends."
+    ]
+  },
+  {
+    "id": "30",
+    "question": "What aspect of commerce do you find most challenging?",
+    "options": [
+      "Managing financial risks and investments.",
+      "Navigating competitive markets.",
+      "Building a successful startup from scratch.",
+      "Understanding the intricacies of economic policies."
+    ]
+  },
+  {
+    "id": "31",
+    "question": "What impact do you want your career to have on the business world?",
+    "options": [
+      "Strengthening financial health and stability.",
+      "Shaping consumer trends and preferences.",
+      "Innovating and disrupting traditional industries.",
+      "Contributing to economic growth and stability."
+    ]
+  },
+  {
+    "id": "32",
+    "question": "Who is your business role model?",
+    "options": ["Elon Musk", "Oprah Winfrey", "Jeff Bezos", "Janet Yellen"]
+  },
+  {
+    "id": "33",
+    "question": "What do you prioritize in a workplace culture?",
+    "options": [
+      "Financial performance and stability.",
+      "Creativity and collaboration.",
+      "Entrepreneurial spirit and autonomy.",
+      "Research-driven and analytical thinking."
+    ]
+  },
+  {
+    "id": "34",
+    "question": "How do you approach competition in the business world?",
+    "options": [
+      "Strategically positioning for market dominance.",
+      "Differentiating through branding and marketing.",
+      "Disrupting existing markets with innovation.",
+      "Analyzing competitive economic forces."
+    ]
+  },
+  {
+    "id": "35",
+    "question": "What aspect of commerce keeps you up at night with excitement?",
+    "options": [
+      "Investment opportunities and wealth creation.",
+      "Building and growing strong brands.",
+      "The thrill of entrepreneurial challenges.",
+      "Economic dynamics and their impact on society."
+    ]
+  },
+  {
+    "id": "36",
+    "question": "What's your preferred communication style in the business world?",
+    "options": [
+      "Precise and data-driven",
+      "Persuasive and influential",
+      "Visionary and inspirational",
+      "Analytical and informative"
+    ]
+  },
+  {
+    "id": "37",
+    "question": "Which of these areas do you see yourself specializing in?",
+    "options": [
+      "Financial risk management",
+      "Branding and advertising",
+      "Disruptive technology innovation",
+      "Economic policy analysis"
+    ]
+  },
+  {
+    "id": "38",
+    "question": "How do you approach the concept of investment?",
+    "options": [
+      "As a means to generate wealth over time",
+      "As a way to enhance brand presence",
+      "As an opportunity for groundbreaking ventures",
+      "As a reflection of economic trends"
+    ]
+  },
+  {
+    "id": "39",
+    "question": "What motivates you to excel in the business world?",
+    "options": [
+      "Achieving financial security",
+      "Making a positive impact on consumers",
+      "Transforming industries through innovation",
+      "Contributing to economic research and policy"
+    ]
+  },
+  {
+    "id": "40",
+    "question": "Which aspect of business leadership appeals to you the most?",
+    "options": [
+      "Strategic financial decision-making",
+      "Inspiring and motivating teams",
+      "Pioneering new business ideas",
+      "Shaping economic policies"
+    ]
+  },
+  {
+    "id": "41",
+    "question": "How do you approach change and adaptability in business?",
+    "options": [
+      "With careful planning and analysis",
+      "Embracing change for brand growth",
+      "Thriving on change and disruption",
+      "Assessing the economic impact of change"
+    ]
+  },
+  {
+    "id": "42",
+    "question": "What kind of market dynamics do you find intriguing?",
+    "options": [
+      "Stock market fluctuations",
+      "Consumer behavior trends",
+      "Startup market entry strategies",
+      "Economic cycles and global trade shifts"
+    ]
+  },
+  {
+    "id": "43",
+    "question": "How do you view the role of innovation in commerce?",
+    "options": [
+      "Innovation should enhance financial outcomes.",
+      "Innovation shapes consumer preferences.",
+      "Innovation drives business success.",
+      "Innovation has economic implications."
+    ]
+  },
+  {
+    "id": "44",
+    "question": "What's your approach to decision-making under uncertainty?",
+    "options": [
+      "Relying on data and analysis",
+      "Taking calculated creative risks",
+      "Embracing uncertainty for growth",
+      "Evaluating economic variables"
+    ]
+  },
+  {
+    "id": "45",
+    "question": "What drives your interest in business sustainability?",
+    "options": [
+      "Ensuring long-term financial stability",
+      "Creating brands with ethical values",
+      "Innovating for a sustainable future",
+      "Considering economic sustainability"
+    ]
+  },
+  {
+    "id": "46",
+    "question": "How do you perceive the role of technology in commerce?",
+    "options": [
+      "Technology optimizes financial processes.",
+      "Technology shapes consumer behavior.",
+      "Technology disrupts industries.",
+      "Technology influences economic trends."
+    ]
+  },
+  {
+    "id": "47",
+    "question": "What aspect of marketing strategy do you find most challenging?",
+    "options": [
+      "Pricing and revenue optimization",
+      "Creating compelling content",
+      "Launching a new product or business",
+      "Analyzing market demand and supply"
+    ]
+  },
+  {
+    "id": "48",
+    "question": "How do you approach financial planning in your personal life?",
+    "options": [
+      "Careful budgeting and saving",
+      "Seeking opportunities to generate income",
+      "Investing in entrepreneurial ventures",
+      "Aligning financial choices with economic trends"
+    ]
+  },
+  {
+    "id": "49",
+    "question": "What excites you about the global business landscape?",
     "options": [
       "Mathematics and Science",
       "Languages and Literature",

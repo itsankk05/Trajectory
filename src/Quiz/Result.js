@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import "./result.css"; // Import your custom CSS
 
 function Result({ searchAnswer, showResult, collectedAnswers }) {
+  useEffect(() => {
+    document.title = "Result - Trajectory";
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   if (!showResult) {
     return null;
   }
