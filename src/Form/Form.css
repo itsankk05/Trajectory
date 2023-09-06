@@ -2,7 +2,6 @@
   width: 100px;
   align-items: center;
 }
-/* ... Your existing CSS code ... */
 
 .required {
   color: red;
@@ -14,7 +13,6 @@
   background-color: #e9ecef; /* Gray out the button when disabled */
   border-color: #e9ecef; /* Gray out the border when disabled */
 }
-/* Add this CSS to your existing "Form.css" or your preferred CSS file */
 
 /* Style for the dropdown menu options */
 .dropdown-menu a {
@@ -44,7 +42,6 @@
 /* DropDown */
 
 .dropDownContainer {
-  /* background-color: #212529; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +56,6 @@
   &::after {
     content: "\00bb";
     position: absolute;
-    /* font-family: "Reem Kufi", sans-serif; */
     width: 20px;
     height: 20px;
     top: 22px;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
-import { Link } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
+import Footer from "../Footer";
 
 export default function Form({
   name,
@@ -21,6 +22,12 @@ export default function Form({
   };
 
   useEffect(() => {
+    document.title = "Form - Trajectory";
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     setIsFormValid(
       name.trim() !== "" && email.trim() !== "" && selectedEducation !== ""
     );
@@ -30,8 +37,18 @@ export default function Form({
     <>
       <div
         className="container my-5"
-        style={{ textAlign: "center", color: "white" }}
+        style={{
+          textAlign: "center",
+          color: "white",
+          width: "100vw",
+          minHeight: "100vh",
+        }}
       >
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1>Lets Get You Set Up</h1>
         <div className="mb-3 my-5">
           <label htmlFor="exampleFormControlInput1" className="form-label">
@@ -98,6 +115,7 @@ export default function Form({
           </button>
         </Link>
       </div>
+      <Footer />
     </>
   );
 }

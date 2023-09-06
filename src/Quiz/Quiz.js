@@ -55,6 +55,12 @@ const Quiz = ({
     }
   };
 
+  useEffect(() => {
+    document.title = "Quiz - Trajectory";
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="quiz">
       <section

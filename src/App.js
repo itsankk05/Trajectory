@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
-import Banner from "./Homepage/Homepage";
+import Homepage from "./Homepage/Homepage";
 import Quiz from "./Quiz/Quiz";
 import Form from "./Form/Form";
 import Start from "./Quiz/Start";
@@ -166,10 +166,21 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Banner />} />
+          <Route
+            exact
+            path="/"
+            element={
+              <Homepage
+                name={name}
+                setName={setName}
+                selectedEducation={selectedEducation}
+                setSelectedEducation={setSelectedEducation}
+              />
+            }
+          />
 
           {/* FORM COMPONENT */}
-          <Route
+          {/* <Route
             exact
             path="/form"
             element={
@@ -180,7 +191,7 @@ function App() {
                 setSelectedEducation={setSelectedEducation}
               />
             }
-          />
+          /> */}
 
           {/* START COMPONENT */}
           <Route
