@@ -18,6 +18,7 @@ const Quiz = ({
   const [question, setQuestion] = useState({});
   const [selectedQuizArray, setSelectedQuizArray] = useState([]);
   const [shuffledQuizArray, setShuffledQuizArray] = useState([]);
+  const isSubmitDisabled = !selectedAnswer;
 
   useEffect(() => {
     let fetchedQuizArray = [];
@@ -57,21 +58,14 @@ const Quiz = ({
 
   useEffect(() => {
     document.title = "Quiz - Trajectory";
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div className="quiz">
-      <section
-        className="bg-dark text-white"
-        style={{
-          overflowY: "hidden",
-          display: `${showQuiz ? "block" : "none"}`,
-        }}
-      >
-        <div className="container">
-          <div className="row vh-100 align-items-center justify-content-center">
+      <section className="bg-dark text-white">
+        <div className="container" style={{ marginTop: "10%" }}>
+          <div className="row align-items-center justify-content-center">
             <div className="col-lg-8">
               <div
                 className="card p-4"
@@ -112,6 +106,7 @@ const Quiz = ({
                   <button
                     className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
                     onClick={handleNextQuestion}
+                    disabled={isSubmitDisabled}
                   >
                     Next Question
                   </button>
