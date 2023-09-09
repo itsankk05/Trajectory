@@ -3,331 +3,325 @@
     "id": "16",
     "question": "Which of the following values do you prioritize the most?",
     "options": [
-      "a) Intellectual curiosity and exploration",
-      "b) Emotional depth and creativity",
-      "c) Empathy and understanding",
-      "d) Aesthetic appreciation and innovation"
+      "Intellectual curiosity and exploration",
+      "Emotional depth and creativity",
+      "Empathy and understanding",
+      "Aesthetic appreciation and innovation"
     ]
   },
   {
     "id": "17",
     "question": "When facing a problem, what's your instinctive approach?",
     "options": [
-      "a) Analyzing it from multiple angles",
-      "b) Crafting a narrative around it",
-      "c) Connecting with people involved",
-      "d) Expressing it through art or design"
+      "Analyzing it from multiple angles",
+      "Crafting a narrative around it",
+      "Connecting with people involved",
+      "Expressing it through art or design"
     ]
   },
   {
     "id": "18",
     "question": "Which of these historical figures inspires you the most?",
     "options": [
-      "a) Voltaire",
-      "b) William Shakespeare",
-      "c) Frida Kahlo",
-      "d) Leonardo da Vinci"
+      "Voltaire",
+      "William Shakespeare",
+      "Frida Kahlo",
+      "Leonardo da Vinci"
     ]
   },
   {
     "id": "19",
     "question": "What do you enjoy doing in your free time?",
     "options": [
-      "a) Engaging in philosophical discussions",
-      "b) Reading novels or poetry",
-      "c) Listening to people's life stories",
-      "d) Creating art or craft projects"
+      "Engaging in philosophical discussions",
+      "Reading novels or poetry",
+      "Listening to people's life stories",
+      "Creating art or craft projects"
     ]
   },
   {
     "id": "20",
     "question": "Which film genre resonates with you the most?",
     "options": [
-      "a) Documentary and informative films",
-      "b) Drama and character-driven stories",
-      "c) Psychological and emotional narratives",
-      "d) Visually stunning and artistic films"
+      "Documentary and informative films",
+      "Drama and character-driven stories",
+      "Psychological and emotional narratives",
+      "Visually stunning and artistic films"
     ]
   },
   {
     "id": "21",
     "question": "How do you handle criticism or feedback?",
     "options": [
-      "a) Analyze it objectively and use it to improve",
-      "b) Reflect on the emotional impact it has",
-      "c) Consider the perspective of the giver",
-      "d) Use creativity to respond constructively"
+      "Analyze it objectively and use it to improve",
+      "Reflect on the emotional impact it has",
+      "Consider the perspective of the giver",
+      "Use creativity to respond constructively"
     ]
   },
   {
     "id": "22",
     "question": "Which literary movement interests you?",
     "options": [
-      "a) Existentialism",
-      "b) Romanticism",
-      "c) Postcolonialism",
-      "d) Surrealism"
+      "Existentialism",
+      "Romanticism",
+      "Postcolonialism",
+      "Surrealism"
     ]
   },
   {
     "id": "23",
     "question": "In a group project, what role do you naturally take on?",
     "options": [
-      "a) The critical thinker and problem solver",
-      "b) The storyteller and communicator",
-      "c) The mediator and empathetic listener",
-      "d) The artist or designer"
+      "The critical thinker and problem solver",
+      "The storyteller and communicator",
+      "The mediator and empathetic listener",
+      "The artist or designer"
     ]
   },
   {
     "id": "24",
     "question": "What kind of conversations do you enjoy the most?",
     "options": [
-      "a) Philosophical debates",
-      "b) Literary analysis and book discussions",
-      "c) Personal life experiences and emotions",
-      "d) Artistic inspirations and visual aesthetics"
+      "Philosophical debates",
+      "Literary analysis and book discussions",
+      "Personal life experiences and emotions",
+      "Artistic inspirations and visual aesthetics"
     ]
   },
   {
     "id": "25",
     "question": "When visiting a museum, which section do you head to first?",
     "options": [
-      "a) The philosophical or historical exhibits",
-      "b) The literature and storytelling section",
-      "c) The exhibits focused on human experiences",
-      "d) The visual art and sculpture galleries"
+      "The philosophical or historical exhibits",
+      "The literature and storytelling section",
+      "The exhibits focused on human experiences",
+      "The visual art and sculpture galleries"
     ]
   },
   {
     "id": "26",
     "question": "How do you like to express your opinions or beliefs?",
     "options": [
-      "a) Through well-reasoned essays or articles",
-      "b) Through storytelling and creative writing",
-      "c) Through open dialogues and conversations",
-      "d) Through visual art installations or performances"
+      "Through well-reasoned essays or articles",
+      "Through storytelling and creative writing",
+      "Through open dialogues and conversations",
+      "Through visual art installations or performances"
     ]
   },
   {
     "id": "27",
     "question": "What type of music resonates with you the most?",
     "options": [
-      "a) Classical and instrumental compositions",
-      "b) Lyrically rich and emotionally charged songs",
-      "c) Music that reflects diverse cultures and emotions",
-      "d) Experimental and avant-garde music"
+      "Classical and instrumental compositions",
+      "Lyrically rich and emotionally charged songs",
+      "Music that reflects diverse cultures and emotions",
+      "Experimental and avant-garde music"
     ]
   },
   {
     "id": "28",
     "question": "Which famous playwright do you admire?",
     "options": [
-      "a) Jean-Paul Sartre",
-      "b) Tennessee Williams",
-      "c) Lorraine Hansberry",
-      "d) William Shakespeare"
+      "Jean-Paul Sartre",
+      "Tennessee Williams",
+      "Lorraine Hansberry",
+      "William Shakespeare"
     ]
   },
   {
     "id": "29",
     "question": "When making a major decision, what do you prioritize?",
     "options": [
-      "a) Rationality and logic",
-      "b) Passion and creativity",
-      "c) Empathy and human values",
-      "d) Aesthetic and artistic appeal"
+      "Rationality and logic",
+      "Passion and creativity",
+      "Empathy and human values",
+      "Aesthetic and artistic appeal"
     ]
   },
   {
     "id": "30",
     "question": "How do you approach understanding different cultures?",
     "options": [
-      "a) Studying their philosophies and beliefs",
-      "b) Exploring their literature and stories",
-      "c) Immersing yourself in their customs and traditions",
-      "d) Expressing cultural appreciation through art"
+      "Studying their philosophies and beliefs",
+      "Exploring their literature and stories",
+      "Immersing yourself in their customs and traditions",
+      "Expressing cultural appreciation through art"
     ]
   },
-
   {
     "id": "31",
     "question": "Which artistic movement captivates you the most?",
-    "options": [
-      "a) Cubism",
-      "b) Gothic Revival",
-      "c) Abstract Expressionism",
-      "d) Pop Art"
-    ]
+    "options": ["Cubism", "Gothic Revival", "Abstract Expressionism", "Pop Art"]
   },
   {
     "id": "32",
     "question": "What do you enjoy discussing with friends?",
     "options": [
-      "a) Ethical dilemmas and moral values",
-      "b) Favorite books and literary characters",
-      "c) Personal growth and emotions",
-      "d) Artistic inspirations and creative projects"
+      "Ethical dilemmas and moral values",
+      "Favorite books and literary characters",
+      "Personal growth and emotions",
+      "Artistic inspirations and creative projects"
     ]
   },
   {
     "id": "33",
     "question": "How do you prefer to learn new concepts?",
     "options": [
-      "a) Through in-depth reading and research",
-      "b) Through storytelling and real-life examples",
-      "c) Through engaging conversations and group discussions",
-      "d) Through visual aids and demonstrations"
+      "Through in-depth reading and research",
+      "Through storytelling and real-life examples",
+      "Through engaging conversations and group discussions",
+      "Through visual aids and demonstrations"
     ]
   },
   {
     "id": "34",
     "question": "What type of theater production do you find most intriguing?",
     "options": [
-      "a) Philosophical or thought-provoking plays",
-      "b) Dramatic and emotionally charged performances",
-      "c) Character-driven narratives with social themes",
-      "d) Visually innovative and avant-garde productions"
+      "Philosophical or thought-provoking plays",
+      "Dramatic and emotionally charged performances",
+      "Character-driven narratives with social themes",
+      "Visually innovative and avant-garde productions"
     ]
   },
   {
     "id": "35",
     "question": "How do you like to spend your vacations?",
     "options": [
-      "a) Exploring museums and historical sites",
-      "b) Reading books or writing creatively",
-      "c) Connecting with locals and their stories",
-      "d) Engaging in visual arts or performances"
+      "Exploring museums and historical sites",
+      "Reading books or writing creatively",
+      "Connecting with locals and their stories",
+      "Engaging in visual arts or performances"
     ]
   },
   {
     "id": "36",
     "question": "What do you find most captivating about ancient civilizations?",
     "options": [
-      "a) Their philosophical and intellectual contributions",
-      "b) The myths and stories that have survived through time",
-      "c) Insights into their daily lives and cultural practices",
-      "d) The artistic and architectural wonders they left behind"
+      "Their philosophical and intellectual contributions",
+      "The myths and stories that have survived through time",
+      "Insights into their daily lives and cultural practices",
+      "The artistic and architectural wonders they left behind"
     ]
   },
   {
     "id": "37",
     "question": "How do you approach understanding complex societal issues?",
     "options": [
-      "a) Analyzing root causes and proposing solutions",
-      "b) Telling stories to raise awareness and empathy",
-      "c) Engaging in dialogue to understand different perspectives",
-      "d) Expressing concerns through artistic activism"
+      "Analyzing root causes and proposing solutions",
+      "Telling stories to raise awareness and empathy",
+      "Engaging in dialogue to understand different perspectives",
+      "Expressing concerns through artistic activism"
     ]
   },
   {
     "id": "38",
     "question": "Which type of writing style appeals to you?",
     "options": [
-      "a) Analytical and persuasive writing",
-      "b) Creative and imaginative storytelling",
-      "c) Personal essays and reflective narratives",
-      "d) Poetic and metaphorical language"
+      "Analytical and persuasive writing",
+      "Creative and imaginative storytelling",
+      "Personal essays and reflective narratives",
+      "Poetic and metaphorical language"
     ]
   },
   {
     "id": "39",
     "question": "When attending a cultural festival, what aspect do you most enjoy?",
     "options": [
-      "a) Discussions and lectures on cultural topics",
-      "b) Literary readings and performances",
-      "c) Interactions with people from diverse backgrounds",
-      "d) Art exhibitions and live art demonstrations"
+      "Discussions and lectures on cultural topics",
+      "Literary readings and performances",
+      "Interactions with people from diverse backgrounds",
+      "Art exhibitions and live art demonstrations"
     ]
   },
   {
     "id": "40",
     "question": "Which type of book cover would attract you the most?",
     "options": [
-      "a) A minimalist, intellectual design",
-      "b) An artistic and visually striking cover",
-      "c) A cover featuring relatable characters",
-      "d) A cover with abstract and symbolic art"
+      "A minimalist, intellectual design",
+      "An artistic and visually striking cover",
+      "A cover featuring relatable characters",
+      "A cover with abstract and symbolic art"
     ]
   },
   {
     "id": "41",
     "question": "How do you like to engage with history?",
     "options": [
-      "a) Analyzing historical documents and writings",
-      "b) Reading historical novels and biographies",
-      "c) Exploring personal narratives and diaries",
-      "d) Admiring historical artworks and artifacts"
+      "Analyzing historical documents and writings",
+      "Reading historical novels and biographies",
+      "Exploring personal narratives and diaries",
+      "Admiring historical artworks and artifacts"
     ]
   },
   {
     "id": "42",
     "question": "What do you enjoy discussing with your peers?",
     "options": [
-      "a) Political ideologies and societal structures",
-      "b) Plot twists and character development in books",
-      "c) Personal growth and life experiences",
-      "d) Creative projects and artistic techniques"
+      "Political ideologies and societal structures",
+      "Plot twists and character development in books",
+      "Personal growth and life experiences",
+      "Creative projects and artistic techniques"
     ]
   },
   {
     "id": "43",
     "question": "Which of these historical events interests you the most?",
     "options": [
-      "a) The Age of Enlightenment",
-      "b) The Romantic Era's cultural revolution",
-      "c) The Civil Rights Movement",
-      "d) The Renaissance and its impact on art"
+      "The Age of Enlightenment",
+      "The Romantic Era's cultural revolution",
+      "The Civil Rights Movement",
+      "The Renaissance and its impact on art"
     ]
   },
   {
     "id": "44",
     "question": "How do you prefer to express your love for nature?",
     "options": [
-      "a) Through philosophical reflections on the environment",
-      "b) Through poetry or literature inspired by nature",
-      "c) By participating in conservation efforts",
-      "d) Through visual art celebrating the natural world"
+      "Through philosophical reflections on the environment",
+      "Through poetry or literature inspired by nature",
+      "By participating in conservation efforts",
+      "Through visual art celebrating the natural world"
     ]
   },
   {
     "id": "45",
     "question": "What type of documentaries do you enjoy watching?",
     "options": [
-      "a) Thought-provoking and informative documentaries",
-      "b) Documentaries exploring the lives of artists and writers",
-      "c) Human interest documentaries focusing on individuals",
-      "d) Visually captivating and artistic documentaries"
+      "Thought-provoking and informative documentaries",
+      "Documentaries exploring the lives of artists and writers",
+      "Human interest documentaries focusing on individuals",
+      "Visually captivating and artistic documentaries"
     ]
   },
   {
     "id": "46",
     "question": "What role do you naturally take on in a group setting?",
     "options": [
-      "a) The critical thinker and problem solver",
-      "b) The storyteller and communicator",
-      "c) The mediator and empathetic listener",
-      "d) The artist or designer"
+      "The critical thinker and problem solver",
+      "The storyteller and communicator",
+      "The mediator and empathetic listener",
+      "The artist or designer"
     ]
   },
   {
     "id": "47",
     "question": "Which famous philosopher's ideas resonate with you?",
     "options": [
-      "a) Immanuel Kant",
-      "b) Jean-Jacques Rousseau",
-      "c) Simone de Beauvoir",
-      "d) Friedrich Nietzsche"
+      "Immanuel Kant",
+      "Jean-Jacques Rousseau",
+      "Simone de Beauvoir",
+      "Friedrich Nietzsche"
     ]
   },
   {
     "id": "48",
     "question": "How do you feel about exploring different cultures through their cuisine?",
     "options": [
-      "a) Intrigued by the cultural significance of dishes",
-      "b) Drawn to the stories behind traditional recipes",
-      "c) Interested in connecting with people through food",
-      "d) Inspired to create food-related art or designs"
+      "Intrigued by the cultural significance of dishes",
+      "Drawn to the stories behind traditional recipes",
+      "Interested in connecting with people through food",
+      "Inspired to create food-related art or designs"
     ]
   },
   {
@@ -341,7 +335,7 @@
     ]
   },
   {
-    "id": "02",
+    "id": "50",
     "question": "Which activities do you enjoy the most during your free time?",
     "options": [
       "Solving puzzles or building things",
