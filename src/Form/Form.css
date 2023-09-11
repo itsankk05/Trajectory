@@ -6,20 +6,44 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center;
+  justify-content: center;
 }
 
-.form-label {
+.title {
+  margin-bottom: 2rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1.8rem auto; /* Adjusted margin for more spacing */
+  width: 50%;
+  text-align: left;
   display: inline-block;
-  margin-bottom: 5px;
-  font-weight: bold;
+}
+
+.input-container label {
+  position: absolute;
+  left: 0;
+  top: 35%; /* Move the label higher */
+  transform: translateY(-50%); /* Center vertically */
+  transition: top 0.3s ease-in-out;
+  pointer-events: none;
+  color: white;
+  font-size: 1rem; /* Adjusted font size */
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 0; /* Position the label above the text box */
+  font-size: 0.875rem; /* Adjusted font size */
+  color: #007bff;
 }
 
 /* Additional adjustments for the button */
 .btn-outline-primary:disabled {
-  background-color: #e9ecef; /* Gray out the button when disabled */
-  border-color: #e9ecef; /* Gray out the border when disabled */
+  background-color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 /* Style for the dropdown menu options */
@@ -36,9 +60,9 @@
 }
 
 .dropdown-menu {
-  background-color: #212529; /* Set the background color to white */
-  border: none; /* Remove border */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-color: #212529;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   width: 100%;
   max-height: 200px;
@@ -93,8 +117,7 @@
   text-align-last: center;
 }
 
-  .selectClass option {
-    background-color: #212529; /* Background color */
-    color: white; /* Text color */
-  }
-
+.selectClass option {
+  background-color: #212529;
+  color: white;
+}
