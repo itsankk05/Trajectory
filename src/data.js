@@ -206,25 +206,74 @@ export const CFA = [
   "Investment opportunities and wealth creation.",
   "Research-driven and analytical thinking."
 ];
+export const BAinEco = [
+  
+];
+export const BMS = [
+  
+];
+
 //Class 12 Arts
 
 export const BA = [ 
   "Social Studies and History",
   "Political ideologies and societal structures",
-  "Engaging in visual arts or performances"
+  "Engaging in visual arts or performances",
+  "Psychology and human behavior",
+  "Psychological and emotional narratives",
+  "Philosophy and essays",
+  "Philosophy and ethics",
+  "Magazines and artistic journals"
 ];
 export const Journalism_and_Mass_Communication = [
-  
+  "Magazines and artistic journals",
+  "Philosophy and essays",
+  "Novels and literature",
+  "Biographies and real-life stories",
+  "Engaging in deep discussions and debates",
+  "Languages and Literature",
+  "Social Studies and History"
+
 ];
 export const Fine_Arts = [
-  
+  "Magazines and artistic journals",
+  "Analyzing and interpreting various forms of art",
+  "Creating visual arts or performances",
+  "Visual or performing arts",
+  "Prefer exploring and interpreting various forms of art",
+  "Visual arts and painting",
+  "Art exhibitions and creative workshops",
+  "Through visually captivating artworks and performances",
+  "Expressing it through art or design",
+  "Creating art or craft projects",
+  "The visual art and sculpture galleries",
+  "Through visual art celebrating the natural world",
+  "Art exhibitions and creative workshops",
+  "Emotional depth and creativity",
+  "Artistic inspirations and creative projects"
 ];
 export const Fashion_Designing = [
-  
+  "Architecture and design",
+  "Expressing it through art or design",
+  "The artist or designer",
+  "A minimalist, intellectual design",
+  "Inspired to create food-related art or designs",
+  "Art and Creativity",
+  "Visually captivating and artistic documentaries",
+  "Renaissance and artistic creativity",
+  "Use creativity to respond constructively",
+  "Passion and creativity",
 ];
 export const Teaching = [
-  
+  "Use creativity to communicate and simplify complex ideas",
+  "Participating in debates or discussions",
+  "Reading books or writing stories",
+  "Languages and Literature",
+  "Enriching the world with creative expressions",
+  "Use creativity to communicate and simplify complex ideas",
+  "Unleashing your creativity through words or visuals",
+  "Through storytelling and creative writing",
+  "Reading books or writing creatively",
+  "Creative and imaginative storytelling"
 ];
-export const PR = [
-  
-];
+
