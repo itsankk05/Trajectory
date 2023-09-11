@@ -178,8 +178,32 @@ function App() {
 
       return topThreeRankings;
     }
-    // else if (selectedEducation == 4) {
+    // // else if (selectedEducation == 4) {
+    // let bapoints = 0;
+    // let JAMCpoints = 0;
+    // let FineArtspoints = 0;
+    // let Fashionpoints = 0;
+    // let Teachingpoints = 0;
+    // let PRpoints = 0;
+    // for (let i = 0; i < collectedAnswers.length; i++) {
+    //   if (BA.includes(collectedAnswers[i])) {
+    //     bapoints += 1;
+    //   }
+    //   if (Journalism_and_Mass_Communication.includes(collectedAnswers[i])) {
+    //     bapoints += 1;
+    //   }
+    //   if (Fine_Arts.includes(collectedAnswers[i])) {
+    //     bapoints += 1;
+    //   }
+    //   if (Fashion_Designing.includes(collectedAnswers[i])) {
+    //     bapoints += 1;
+    //   }
+    //   if (Teaching.includes(collectedAnswers[i])) {
+    //     bapoints += 1;
+    //   }
     // }
+
+    // // }
   }
   return (
     <div className="app">
