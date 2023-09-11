@@ -14,7 +14,7 @@
 
 .banner_description {
   color: white;
-  font-family: "Roboto Mono", sans-serif;
+  font-family: 'Poppins', sans-serif; /* Use the Poppins font */
   display: inline;
   align-items: center;
   margin-top: 30px;
@@ -25,6 +25,9 @@
   transform: translateX(-20px);
   animation: fadeInRight 0.5s forwards;
 }
+
+/* Rest of your CSS remains unchanged */
+
 
 @keyframes fadeInRight {
   to {

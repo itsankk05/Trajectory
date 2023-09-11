@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Homepage.css";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import Form from "../Form/Form";
 
 export default function Homepage({
@@ -12,15 +11,14 @@ export default function Homepage({
 }) {
   useEffect(() => {
     document.title = "Home - Trajectory";
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
   return (
     <>
       <header className="banner">
         <div className="mainpagecontent">
           <div className="banner_description">
-            <h3>
+            <h3 className="description-text">
               Discover Your Path: Embark on a personalized journey towards your
               dream career. Whether you're in 10th grade, 12th grade, or
               college, our interactive quiz matches your aspirations, strengths,

@@ -1,5 +1,6 @@
+// Form.js
 import React, { useState, useEffect } from "react";
-import "./Form.css";
+import "./Form.css"; // Import your CSS file
 import { Route, Routes, Link } from "react-router-dom";
 import Footer from "../Footer";
 
@@ -42,6 +43,10 @@ export default function Form({
           color: "white",
           width: "100vw",
           minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center", // Center horizontally
+          justifyContent: "center", // Center vertically
         }}
       >
         <br />
@@ -50,35 +55,31 @@ export default function Form({
         <br />
         <br />
         <h1>Lets Get You Set Up</h1>
-        <div className="mb-3 my-5">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Your Name:<span className="required">*</span>
+        <div className="mb-3 input-container">
+          <input
+            className="form-control w-50"
+            id="exampleFormControlInput1"
+            placeholder=""
+            value={name}
+            onChange={handleChange}
+          />
+          <label htmlFor="exampleFormControlInput1" className="input-container">
+            Your Name
           </label>
-          <div className="row d-flex justify-content-center">
-            <input
-              className="form-control w-50"
-              id="exampleFormControlInput1"
-              placeholder="Name"
-              value={name}
-              onChange={handleChange}
-            />
-          </div>
         </div>
-        <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">
-            Where should we contact you:<span className="required">*</span>
+        <div className="mb-3 input-container">
+          <input
+            type="email"
+            className="form-control w-50"
+            id="exampleFormControlInput2"
+            placeholder=""
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <label htmlFor="exampleFormControlInput2" className="input-container">
+            Where should we contact you
           </label>
-          <div className="row d-flex justify-content-center">
-            <input
-              type="email"
-              className="form-control w-50"
-              id="exampleFormControlInput1"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
         </div>
         <label htmlFor="lang">Education</label>
         <div
@@ -96,7 +97,7 @@ export default function Form({
               </option>
               <option value="1">10th Standard</option>
               <option value="2">12th Standard- Science</option>
-              <option value="3">12th Standard- Commerece</option>
+              <option value="3">12th Standard- Commerce</option>
               <option value="4">12th Standard- Arts</option>
             </select>
           </span>
@@ -108,7 +109,6 @@ export default function Form({
             className="btn btn-outline-primary"
             disabled={!isFormValid}
             style={{ marginTop: "15px", width: "200px", height: "50px" }}
-            // onClick={console.log(selectedEducation)}
           >
             Submit
           </button>
