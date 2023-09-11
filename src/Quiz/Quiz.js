@@ -61,72 +61,89 @@ const Quiz = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <div className="quiz">
-      <section className="bg-dark text-white">
-        <div className="container" style={{ marginTop: "10%" }}>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-8">
-              <div
-                className="card p-4"
-                style={{ background: "#3d3d3d", borderColor: "#646464" }}
-              >
-                <div className="d-flex justify-content-between gap-md-3">
-                  <h5
-                    className="mb-2 fs-normal lh-base"
-                    style={{ color: "white" }}
-                  >
-                    {question?.question}
-                  </h5>
-                  <h5
-                    style={{
-                      color: "#60d600",
-                      width: "100px",
-                      textAlign: "right",
-                    }}
-                  >
-                    {selectedQuizArray.indexOf(question) + 1} /{" "}
-                    {selectedQuizArray?.length}
-                  </h5>
-                </div>
-                <div>
-                  {question?.options?.map((item, index) => (
-                    <button
-                      key={index}
-                      className={`option w-100 text-start btn text-white py-2 px-3 mt-3 rounded btn-dark 
-                    `}
-                      onClick={(event) => checkAnswer(event, item)}
-                    >
-                      {item}
-                    </button>
-                  ))}
-                </div>
+  const randomPic = () => {
+    let randomImage = [
+      "https://www.clipartmax.com/png/middle/329-3296448_path-clipart-career-development-career-path-icon-png.png",
+      "https://www.clipartmax.com/png/middle/279-2799552_you-knew-about-the-value-proposition-for-offshore-development-confused-about-your.png",
+      "https://www.clipartmax.com/png/middle/231-2310721_how-do-we-prepare-new-chemistry-teachers-for-the-21st-career-path.png",
+      "https://www.clipartmax.com/png/middle/146-1460866_career-path-career-path-png-transparent.png",
+    ];
 
-                {questionIndex + 1 !== selectedQuizArray.length ? (
-                  <button
-                    className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
-                    onClick={handleNextQuestion}
-                    disabled={isSubmitDisabled}
-                  >
-                    Next Question
-                  </button>
-                ) : (
-                  <Link to="/result">
+    let image = randomImage[Math.floor(Math.random() * randomImage.length)];
+    return image;
+  };
+
+  return (
+    <>
+      <div style={{ position: "absolute", height: "100px", width: "100px" }}>
+        <img src={randomPic()} alt="..." />
+      </div>
+      <div className="quiz">
+        <section className="bg-dark text-white">
+          <div className="container" style={{ marginTop: "10%" }}>
+            <div className="row align-items-center justify-content-center">
+              <div className="col-lg-8">
+                <div
+                  className="card p-4"
+                  style={{ background: "#3d3d3d", borderColor: "#646464" }}
+                >
+                  <div className="d-flex justify-content-between gap-md-3">
+                    <h5
+                      className="mb-2 fs-normal lh-base"
+                      style={{ color: "white" }}
+                    >
+                      {question?.question}
+                    </h5>
+                    <h5
+                      style={{
+                        color: "#60d600",
+                        width: "100px",
+                        textAlign: "right",
+                      }}
+                    >
+                      {selectedQuizArray.indexOf(question) + 1} /{" "}
+                      {selectedQuizArray?.length}
+                    </h5>
+                  </div>
+                  <div>
+                    {question?.options?.map((item, index) => (
+                      <button
+                        key={index}
+                        className={`option w-100 text-start btn text-white py-2 px-3 mt-3 rounded btn-dark 
+                    `}
+                        onClick={(event) => checkAnswer(event, item)}
+                      >
+                        {item}
+                      </button>
+                    ))}
+                  </div>
+
+                  {questionIndex + 1 !== selectedQuizArray.length ? (
                     <button
                       className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
-                      disabled={!selectedAnswer}
-                      onClick={showTheResult}
+                      onClick={handleNextQuestion}
+                      disabled={isSubmitDisabled}
                     >
-                      Show Result
+                      Next Question
                     </button>
-                  </Link>
-                )}
+                  ) : (
+                    <Link to="/result">
+                      <button
+                        className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
+                        disabled={!selectedAnswer}
+                        onClick={showTheResult}
+                      >
+                        Show Result
+                      </button>
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 

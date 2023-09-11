@@ -16,7 +16,7 @@
 
 /* Additional adjustments for the button */
 .btn-outline-primary:disabled {
-  background-color: #e9ecef; /* Gray out the button when disabled */
+  background-color: #e9ecef;
   border-color: #e9ecef; /* Gray out the border when disabled */
 }
 

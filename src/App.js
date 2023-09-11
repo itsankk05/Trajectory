@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Navbar/Navbar";
 import Homepage from "./Homepage/Homepage";
 import Quiz from "./Quiz/Quiz";
-import Form from "./Form/Form";
+// import Form from "./Form/Form";
 import Start from "./Quiz/Start";
 import Result from "./Quiz/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,8 +19,6 @@ import {
   bCom,
   LLB,
   CFA,
-  BAinEco,
-  BMS,
 } from "./data";
 
 function App() {
@@ -125,16 +123,24 @@ function App() {
           medicalPoints += 1;
         }
       }
+      const rankings = [
+        { category: "Engineering", points: engineeringPoints },
+        { category: "Medical", points: medicalPoints },
+        // { category: "Arts", points: class10PointsArts },
+      ];
+
+      rankings.sort((a, b) => b.points - a.points);
+      return rankings;
     }
 
     //Commerece ElseIf Statements
     else if (selectedEducation == 3) {
       let caPoints = 0;
-      let baPoints = 0;
+      // let baPoints = 0;
       let cfaPoints = 0;
       let bcomPoints = 0;
       let bbaPoints = 0;
-      let bmsPoints = 0;
+      // let bmsPoints = 0;
       let llbPoints = 0;
       for (let i = 0; i < collectedAnswers.length; i++) {
         if (CA.includes(collectedAnswers[i])) {
@@ -152,14 +158,28 @@ function App() {
         if (CFA.includes(collectedAnswers[i])) {
           cfaPoints += 1;
         }
-        if (BAinEco.includes(collectedAnswers[i])) {
-          baPoints += 1;
-        }
-        if (BMS.includes(collectedAnswers[i])) {
-          bmsPoints += 1;
-        }
+        // if (BAinEco.includes(collectedAnswers[i])) {
+        //   baPoints += 1;
+        // }
+        // if (BMS.includes(collectedAnswers[i])) {
+        //   bmsPoints += 1;
+        // }
       }
+      const rankings = [
+        { category: "Charted Accountant", points: caPoints },
+        { category: "BBA", points: bbaPoints },
+        { category: "B.Com", points: bcomPoints },
+        { category: "Law", points: llbPoints },
+        { category: "Chief Finance Officer", points: cfaPoints },
+      ];
+
+      rankings.sort((a, b) => b.points - a.points);
+      const topThreeRankings = rankings.slice(0, 3);
+
+      return topThreeRankings;
     }
+    // else if (selectedEducation == 4) {
+    // }
   }
   return (
     <div className="app">
@@ -178,20 +198,6 @@ function App() {
               />
             }
           />
-
-          {/* FORM COMPONENT */}
-          {/* <Route
-            exact
-            path="/form"
-            element={
-              <Form
-                name={name}
-                setName={setName}
-                selectedEducation={selectedEducation}
-                setSelectedEducation={setSelectedEducation}
-              />
-            }
-          /> */}
 
           {/* START COMPONENT */}
           <Route
@@ -232,6 +238,7 @@ function App() {
                 collectedAnswers={collectedAnswers}
                 searchAnswer={searchAnswer}
                 showResult={showResult}
+                selectedEducation={selectedEducation}
                 // quizs={quizs}
                 // startOver={startOver}
               />

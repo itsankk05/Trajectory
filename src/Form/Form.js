@@ -36,9 +36,8 @@ export default function Form({
   return (
     <>
       <div
-        className="container my-5"
+        className="container my-5 "
         style={{
-          textAlign: "center",
           color: "white",
           width: "100vw",
           minHeight: "100vh",
