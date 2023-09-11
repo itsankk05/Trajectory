@@ -93,34 +93,8 @@
   text-align-last: center;
 }
 
-.selectClass option {
-  background-color: #212529; /* Background color */
-  color: white; /* Text color */
-}
+  .selectClass option {
+    background-color: #212529; /* Background color */
+    color: white; /* Text color */
+  }
 
-/* Add the input container styles for the slide-up animation */
-.input-container {
-  position: relative;
-  margin: 0.5rem 0.25rem;
-  width: 100%;
-  text-align: left;
-  display: flex;
-  justify-content: space-around;
-}
-
-.input-container label {
-  margin: auto;
-  position: absolute;
-  left: 0;
-  top: 0.5rem; /* Adjust the vertical position */
-  transition: top 0.3s ease-in-out;
-  pointer-events: none;
-  color: grey;
-}
-
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label {
-  top: -1.2rem; /* Adjust the vertical position */
-  font-size: 0.75rem; /* Adjust the font size when the label is up */
-  color: #007bff; /* Change the color when focused or input is not empty */
-}
