@@ -1,5 +1,155 @@
 [
   {
+    "id": "01",
+    "question": "What type of reading material do you enjoy the most?",
+    "options": [
+      "Philosophy and essays",
+      "Novels and literature",
+      "Biographies and real-life stories",
+      "Magazines and artistic journals"
+    ]
+  },
+  {
+    "id": "02",
+    "question": "Which activity do you find most engaging?",
+    "options": [
+      "Engaging in deep discussions and debates",
+      "Analyzing and interpreting various forms of art",
+      "Understanding and connecting with people's emotions",
+      "Creating visual arts or performances"
+    ]
+  },
+  {
+    "id": "03",
+    "question": "What motivates you to express yourself?",
+    "options": [
+      "Sharing your thoughts on important societal issues",
+      "Telling stories and conveying emotions through words",
+      "Understanding different perspectives and cultures",
+      "Expressing yourself through various artistic mediums"
+    ]
+  },
+  {
+    "id": "04",
+    "question": "Which historical period or cultural movement interests you the most?",
+    "options": [
+      "Enlightenment and philosophical ideas",
+      "Romanticism and literary exploration",
+      "Civil rights movements and social change",
+      "Renaissance and artistic creativity"
+    ]
+  },
+  {
+    "id": "05",
+    "question": "How do you feel about working in collaborative settings?",
+    "options": [
+      "Enjoy collaborating and exchanging ideas with peers",
+      "Prefer working independently on your creative projects",
+      "Value teamwork and empathetic communication",
+      "Collaborate in artistic endeavors for unique outcomes"
+    ]
+  },
+  {
+    "id": "06",
+    "question": "What type of writing appeals to you?",
+    "options": [
+      "Essays that explore abstract concepts",
+      "Fictional stories with intricate characters",
+      "Personal narratives and life experiences",
+      "Poetry that evokes emotions and imagery"
+    ]
+  },
+  {
+    "id": "07",
+    "question": "Which subject excites you the most?",
+    "options": [
+      "Philosophy and ethics",
+      "Literature and literary analysis",
+      "Psychology and human behavior",
+      "Visual or performing arts"
+    ]
+  },
+  {
+    "id": "08",
+    "question": "What kind of impact would you like to make with your career?",
+    "options": [
+      "Shaping intellectual discourse and critical thinking",
+      "Inspiring and moving people through your writing",
+      "Contributing to mental health and well-being",
+      "Enriching the world with creative expressions"
+    ]
+  },
+  {
+    "id": "09",
+    "question": "How do you handle ambiguity and complex ideas?",
+    "options": [
+      "Enjoy delving into abstract concepts and debating them",
+      "Prefer exploring and interpreting various forms of art",
+      "Empathize with diverse viewpoints and experiences",
+      "Use creativity to communicate and simplify complex ideas"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "What kind of art forms interest you the most?",
+    "options": [
+      "Architecture and design",
+      "Literature and poetry",
+      "Theater and performing arts",
+      "Visual arts and painting"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "What type of career events or workshops would you attend willingly?",
+    "options": [
+      "Philosophical debates and intellectual discussions",
+      "Writing workshops and literary festivals",
+      "Empathy-building and communication skills workshops",
+      "Art exhibitions and creative workshops"
+    ]
+  },
+  {
+    "id": "12",
+    "question": "Which quote resonates with you the most?",
+    "options": [
+      "\"The only true wisdom is in knowing you know nothing.\" - Socrates",
+      "\"The world is a book, and those who do not travel read only one page.\" - Augustine of Hippo",
+      "\"In a gentle way, you can shake the world.\" - Mahatma Gandhi",
+      "\"Every artist was first an amateur.\" - Ralph Waldo Emerson"
+    ]
+  },
+  {
+    "id": "13",
+    "question": "What drives you to explore the humanities and arts?",
+    "options": [
+      "Seeking the deeper meaning of existence and ideas",
+      "Unleashing your creativity through words or visuals",
+      "Understanding human experiences and emotions",
+      "Expressing your unique perspective on the world"
+    ]
+  },
+  {
+    "id": "14",
+    "question": "How do you approach interpreting works of art?",
+    "options": [
+      "Analyze the symbolism and underlying messages",
+      "Connect emotionally with the characters and themes",
+      "Consider the historical and cultural context",
+      "Appreciate the aesthetics and visual elements"
+    ]
+  },
+  {
+    "id": "15",
+    "question": "What is your preferred way of conveying a message?",
+    "options": [
+      "Through well-reasoned arguments and debates",
+      "Through beautifully crafted stories and narratives",
+      "Through understanding and empathetic communication",
+      "Through visually captivating artworks and performances"
+    ]
+  },
+  {
     "id": "16",
     "question": "Which of the following values do you prioritize the most?",
     "options": [

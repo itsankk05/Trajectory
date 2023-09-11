@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "./result.css"; // Import your custom CSS
 
-function Result({ searchAnswer, showResult, collectedAnswers }) {
+function Result({
+  searchAnswer,
+  showResult,
+  collectedAnswers,
+  selectedEducation,
+}) {
   useEffect(() => {
     document.title = "Result - Trajectory";
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -14,7 +18,7 @@ function Result({ searchAnswer, showResult, collectedAnswers }) {
     return null;
   }
 
-  const rankings = searchAnswer(collectedAnswers).sort(
+  const rankings = searchAnswer(collectedAnswers, selectedEducation).sort(
     (a, b) => b.points - a.points
   );
 
