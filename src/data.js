@@ -85,8 +85,7 @@ export const engineering = [
   "Solving puzzles or building things",
   "Mathematics and Science",
   "I see value in interdisciplinary mathematical research.",
-  "The proof of a famous mathematical conjecture"
-  
+  "The proof of a famous mathematical conjecture",
 ];
 export const medical = [
   "Biology",
@@ -101,7 +100,7 @@ export const medical = [
   "Genetics and biotechnology",
   "Developing new materials and pharmaceuticals",
   "Enhancing our understanding of life and health",
-  "Studying the diversity and complexity of living organisms"
+  "Studying the diversity and complexity of living organisms",
 ];
 export const Architecture = [
   "Art and Creativity",
@@ -119,7 +118,7 @@ export const Computer_Science = [
   "Solving complex engineering challenges",
   "The invention of computers and algorithms",
   "Data science and computational mathematics",
-  "Quantum computing developments"
+  "Quantum computing developments",
 ];
 export const Data_Science_and_Analytics = [
   "Mathematics",
@@ -133,7 +132,7 @@ export const Data_Science_and_Analytics = [
   "Applying mathematical principles to real-world scenarios",
   "Solving intricate mathematical puzzles",
   "Ready to explore complex mathematical theories",
-  "Employing mathematical reasoning and calculations"
+  "Employing mathematical reasoning and calculations",
 ];
 
 export const Astronomy = [
@@ -143,7 +142,6 @@ export const Astronomy = [
   "Social Studies and History",
   "Social Studies and History",
   "Mathematics and Science",
-  
 ];
 
 // export const engineering = [];
@@ -183,7 +181,7 @@ export const bCom = [
   "Taking calculated risks for potential rewards",
   "Financial risk management",
   "Identifying opportunities and taking calculated risks",
-  "Managing financial risks and investments."
+  "Managing financial risks and investments.",
 ];
 export const LLB = [
   "Research-driven and analytical thinking.",
@@ -193,29 +191,23 @@ export const LLB = [
   "Research-driven and analytical thinking.",
   "Economic policy analysis",
   "Government and economic policy",
-  "Analytical and informative"
+  "Analytical and informative",
 ];
 export const CFA = [
   "Investment banker",
   "Stock markets and investment strategies",
-  "\"The best investment you can make is in yourself.\" - Warren Buffett",
+  '"The best investment you can make is in yourself." - Warren Buffett',
   "Financial planning and investment strategies",
   "Finance and investment",
   "Investment and portfolio management",
   "Managing financial risks and investments.",
   "Investment opportunities and wealth creation.",
-  "Research-driven and analytical thinking."
-];
-export const BAinEco = [
-  
-];
-export const BMS = [
-  
+  "Research-driven and analytical thinking.",
 ];
 
 //Class 12 Arts
 
-export const BA = [ 
+export const BA = [
   "Social Studies and History",
   "Political ideologies and societal structures",
   "Engaging in visual arts or performances",
@@ -223,7 +215,7 @@ export const BA = [
   "Psychological and emotional narratives",
   "Philosophy and essays",
   "Philosophy and ethics",
-  "Magazines and artistic journals"
+  "Magazines and artistic journals",
 ];
 export const Journalism_and_Mass_Communication = [
   "Magazines and artistic journals",
@@ -232,8 +224,7 @@ export const Journalism_and_Mass_Communication = [
   "Biographies and real-life stories",
   "Engaging in deep discussions and debates",
   "Languages and Literature",
-  "Social Studies and History"
-
+  "Social Studies and History",
 ];
 export const Fine_Arts = [
   "Magazines and artistic journals",
@@ -250,7 +241,7 @@ export const Fine_Arts = [
   "Through visual art celebrating the natural world",
   "Art exhibitions and creative workshops",
   "Emotional depth and creativity",
-  "Artistic inspirations and creative projects"
+  "Artistic inspirations and creative projects",
 ];
 export const Fashion_Designing = [
   "Architecture and design",
@@ -274,6 +265,5 @@ export const Teaching = [
   "Unleashing your creativity through words or visuals",
   "Through storytelling and creative writing",
   "Reading books or writing creatively",
-  "Creative and imaginative storytelling"
+  "Creative and imaginative storytelling",
 ];
-
