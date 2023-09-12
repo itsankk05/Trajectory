@@ -18,25 +18,27 @@ export default function Homepage({
       <header className="banner">
         <div className="mainpagecontent">
           <div className="banner_description">
-            <h3 className="description-text">
-              Discover Your Path: Embark on a personalized journey towards your
-              dream career. Whether you're in 10th grade, 12th grade, or
-              college, our interactive quiz matches your aspirations, strengths,
-              and interests to a world of exciting career possibilities. Unveil
-              your potential and let us guide you towards a future filled with
-              purpose.
-            </h3>
+            <h1 className="description-title">
+              Discover Your Path
+            </h1>
+            <p className="description-text">
+              Embark on a personalized journey towards your dream career.
+              Whether you're in 10th grade, 12th grade, or college, our
+              interactive quiz matches your aspirations, strengths, and interests
+              to a world of exciting career possibilities. Unveil your potential
+              and let us guide you towards a future filled with purpose.
+            </p>
           </div>
           <div className="careerimg">
-            <a className="carrerimgg" href="/">
-              <img src="shutter.png" alt="bga" />
+            <a className="careerimg-link" href="/">
+              <img src="shutter.png" alt="Background" />
             </a>
           </div>
         </div>
 
         <div className="banner_buttons">
           <a href="#form">
-            <button className="button-52">Start Your Journey</button>
+            <button className="button-start">Start Your Journey</button>
           </a>
         </div>
       </header>

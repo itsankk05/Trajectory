@@ -60,7 +60,7 @@
 }
 
 &::after {
-  content: "\00bb";
+  /* content: "\00bb"; */
   position: absolute;
   width: 20px;
   height: 20px;
