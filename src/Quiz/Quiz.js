@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./Quiz.css";
 import quiz10 from "../quiz.json";
 import quiz12Science from "../quiz12Science.json";
 import quiz12Commerce from "../quiz12Commerce.json";
@@ -18,6 +19,8 @@ const Quiz = ({
   const [question, setQuestion] = useState({});
   const [selectedQuizArray, setSelectedQuizArray] = useState([]);
   const [shuffledQuizArray, setShuffledQuizArray] = useState([]);
+  const [isQuestionVisible, setIsQuestionVisible] = useState(true); // State to control animation
+
   const isSubmitDisabled = !selectedAnswer;
 
   useEffect(() => {
@@ -48,8 +51,12 @@ const Quiz = ({
   const handleNextQuestion = () => {
     const nextIndex = questionIndex + 1;
     if (nextIndex < shuffledQuizArray.length) {
-      setQuestion(shuffledQuizArray[nextIndex]);
-      nextQuestion();
+      setIsQuestionVisible(false); // Hide the question with animation
+      setTimeout(() => {
+        setQuestion(shuffledQuizArray[nextIndex]);
+        nextQuestion();
+        setIsQuestionVisible(true); // Show the new question with animation
+      }, 400);
     } else {
       // Handle end of the quiz, e.g., show result or navigate to the result page
       showTheResult();
@@ -75,73 +82,78 @@ const Quiz = ({
 
   return (
     <>
-      <div style={{ position: "absolute", height: "100px", width: "100px" }}>
-        <img src={randomPic()} alt="..." />
-      </div>
-      <div className="quiz">
-        <section className="bg-dark text-white">
-          <div className="container" style={{ marginTop: "10%" }}>
-            <div className="row align-items-center justify-content-center">
-              <div className="col-lg-8">
-                <div
-                  className="card p-4"
-                  style={{ background: "#3d3d3d", borderColor: "#646464" }}
-                >
-                  <div className="d-flex justify-content-between gap-md-3">
-                    <h5
-                      className="mb-2 fs-normal lh-base"
-                      style={{ color: "white" }}
-                    >
-                      {question?.question}
-                    </h5>
-                    <h5
-                      style={{
-                        color: "#60d600",
-                        width: "100px",
-                        textAlign: "right",
-                      }}
-                    >
-                      {selectedQuizArray.indexOf(question) + 1} /{" "}
-                      {selectedQuizArray?.length}
-                    </h5>
-                  </div>
-                  <div>
-                    {question?.options?.map((item, index) => (
-                      <button
-                        key={index}
-                        className={`option w-100 text-start btn text-white py-2 px-3 mt-3 rounded btn-dark 
-                    `}
-                        onClick={(event) => checkAnswer(event, item)}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
+      <div
+        className={`quiz ${
+          isQuestionVisible ? "question-animation show" : "question-animation"
+        }`}
+      >
+        <div className="quiz">
+          {/* <img className="imagePosition" src={randomPic()}></img> */}
 
-                  {questionIndex + 1 !== selectedQuizArray.length ? (
-                    <button
-                      className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
-                      onClick={handleNextQuestion}
-                      disabled={isSubmitDisabled}
-                    >
-                      Next Question
-                    </button>
-                  ) : (
-                    <Link to="/result">
+          <section className="bg-dark text-white">
+            <div className="container" style={{ marginTop: "10%" }}>
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div
+                    className="card p-4"
+                    style={{ background: "#3d3d3d", borderColor: "#646464" }}
+                  >
+                    <div className="d-flex justify-content-between gap-md-3">
+                      <h5
+                        className="mb-2 fs-normal lh-base"
+                        style={{ color: "white" }}
+                      >
+                        {question?.question}
+                      </h5>
+                      <h5
+                        style={{
+                          color: "#60d600",
+                          width: "100px",
+                          textAlign: "right",
+                        }}
+                      >
+                        {selectedQuizArray.indexOf(question) + 1} /{" "}
+                        {selectedQuizArray?.length}
+                      </h5>
+                    </div>
+                    <div>
+                      {question?.options?.map((item, index) => (
+                        <button
+                          key={index}
+                          className={`option w-100 text-start btn text-white py-2 px-3 mt-3 rounded btn-dark 
+                    `}
+                          onClick={(event) => checkAnswer(event, item)}
+                        >
+                          {item}
+                        </button>
+                      ))}
+                    </div>
+
+                    {questionIndex + 1 !== selectedQuizArray.length ? (
                       <button
                         className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
-                        disabled={!selectedAnswer}
-                        onClick={showTheResult}
+                        onClick={handleNextQuestion}
+                        disabled={isSubmitDisabled}
                       >
-                        Show Result
+                        Next Question
                       </button>
-                    </Link>
-                  )}
+                    ) : (
+                      <Link to="/result">
+                        <button
+                          className="btn py-2 w-100 mt-3 bg-primary text-light fw-bold"
+                          disabled={!selectedAnswer}
+                          onClick={showTheResult}
+                        >
+                          Show Result
+                        </button>
+                      </Link>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </>
   );

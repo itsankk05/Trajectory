@@ -1,0 +1,15 @@
+.question-animation {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.question-animation.show {
+  opacity: 1;
+}
+
+.imagePosition {
+  position: absolute;
+  justify-content: right;
+  height: 200px;
+  width: 150px;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
-import { Link } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
+import Footer from "../Footer";
 
 export default function Form({
   name,
@@ -12,15 +13,18 @@ export default function Form({
   const [isFormValid, setIsFormValid] = useState(false);
 
   const handleChange = (event) => {
+    // 👇 Store the input value to local state
     setName(event.target.value);
   };
 
   const handleEducationChange = (event) => {
-    setSelectedEducation(event.target.value);
+    setSelectedEducation(event.target.value); // Update the selected education
   };
 
   useEffect(() => {
     document.title = "Form - Trajectory";
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -30,64 +34,86 @@ export default function Form({
   }, [name, email, selectedEducation]);
 
   return (
-    <div className="container">
-      <h1 className="title">Let's Get You Set Up</h1>
-      <div className="input-container">
-        <input
-          className="form-control"
-          id="name"
-          placeholder=""
-          value={name}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="name" className="form-label">
-          Your Name:
-        </label>
-      </div>
-      <div className="input-container">
-        <input
-          type="email"
-          className="form-control"
-          id="email"
-          placeholder=""
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label htmlFor="email" className="form-label">
-          Where should we contact you:
-        </label>
-      </div>
-      <label htmlFor="education">Education</label>
-      <div className="dropDownContainer">
-        <span className="select-wrapper">
-          <select
-            className="selectClass"
-            defaultValue={"DEFAULT"}
-            onChange={handleEducationChange}
-            required
-          >
-            <option value="DEFAULT" disabled>
-              Select Education
-            </option>
-            <option value="1">10th Standard</option>
-            <option value="2">12th Standard- Science</option>
-            <option value="3">12th Standard- Commerce</option>
-            <option value="4">12th Standard- Arts</option>
-          </select>
-        </span>
-      </div>
-
-      <Link to={isFormValid ? "/start" : "#"}>
-        <button
-          type="submit"
-          className="btn btn-outline-primary"
-          disabled={!isFormValid}
+    <>
+      <div
+        className="container my-5 "
+        style={{
+          color: "white",
+          width: "100vw",
+          minHeight: "100vh",
+        }}
+      >
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>Lets Get You Set Up</h1>
+        <div className="mb-3 my-5">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            Your Name:<span className="required">*</span>
+          </label>
+          <div className="row d-flex justify-content-center">
+            <input
+              className="form-control w-50"
+              id="exampleFormControlInput1"
+              placeholder="Name"
+              value={name}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
+            Where should we contact you:<span className="required">*</span>
+          </label>
+          <div className="row d-flex justify-content-center">
+            <input
+              type="email"
+              className="form-control w-50"
+              id="exampleFormControlInput1"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+        </div>
+        <label htmlFor="lang">Education</label>
+        <div
+          className="dropDownContainer"
+          style={{ backgroundColor: "#212529" }}
         >
-          Submit
-        </button>
-      </Link>
-    </div>
+          <span className="select-wrapper">
+            <select
+              className="selectClass"
+              defaultValue={"DEFAULT"}
+              onChange={handleEducationChange}
+            >
+              <option value="DEFAULT" disabled>
+                Select Education
+              </option>
+              <option value="1">10th Standard</option>
+              <option value="2">12th Standard- Science</option>
+              <option value="3">12th Standard- Commerece</option>
+              <option value="4">12th Standard- Arts</option>
+            </select>
+          </span>
+        </div>
+
+        <Link to={isFormValid ? "/start" : "#"}>
+          <button
+            type="submit"
+            className="btn btn-outline-primary"
+            disabled={!isFormValid}
+            style={{ marginTop: "15px", width: "200px", height: "50px" }}
+            // onClick={console.log(selectedEducation)}
+          >
+            Submit
+          </button>
+        </Link>
+      </div>
+      <Footer />
+    </>
   );
 }
