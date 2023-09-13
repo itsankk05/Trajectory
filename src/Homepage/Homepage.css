@@ -5,6 +5,7 @@
   width: 100vw;
   min-height: 80vh;
   
+  
 }
 
 .mainpagecontent {
@@ -61,17 +62,17 @@
 }
 
 .button-start {
-  width: 300px; /* Increase width */
+  width: 380px; /* Increase width */
   height: 100px; /* Increase height */
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 30px 70px; /* Increase padding */
+  padding: 30px 30px; /* Increase padding */
   outline: 0;
   border: none; /* Remove the border */
   cursor: pointer;
   position: relative;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(42, 43, 69);
   color: #ffffff;
   user-select: none;
   -webkit-user-select: none;

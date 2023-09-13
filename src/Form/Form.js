@@ -116,7 +116,7 @@ export default function Form({
               )}
             </div>
           </div>
-          <label htmlFor="lang">Education</label>
+          <label htmlFor="lang">Education:<span className="required">*</span></label>
           <div
             className="dropDownContainer"
             style={{ backgroundColor: "#212529" }}
