@@ -79,7 +79,9 @@ export default function Form({
             />
           </div>
         </div>
-        <label htmlFor="lang">Education</label>
+        <label htmlFor="lang">
+          <b>Education</b>
+        </label>
         <div
           className="dropDownContainer"
           style={{ backgroundColor: "#212529" }}
@@ -91,7 +93,7 @@ export default function Form({
               onChange={handleEducationChange}
             >
               <option value="DEFAULT" disabled>
-                Select Education
+                Select Education 👇
               </option>
               <option value="1">10th Standard</option>
               <option value="2">12th Standard- Science</option>
@@ -107,7 +109,6 @@ export default function Form({
             className="btn btn-outline-primary"
             disabled={!isFormValid}
             style={{ marginTop: "15px", width: "200px", height: "50px" }}
-            // onClick={console.log(selectedEducation)}
           >
             Submit
           </button>

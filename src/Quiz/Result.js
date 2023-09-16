@@ -22,7 +22,7 @@ import {
   Fine_Arts,
   Journalism_and_Mass_Communication,
   BA,
-} from "../data";
+} from "../../src/data";
 
 function Result({ collectedAnswers, selectedEducation }) {
   useEffect(() => {
@@ -265,6 +265,7 @@ function getCategoryClass(category) {
       "Commerce",
       "Engineering",
       "Medical",
+      "Astrology",
       "Architecture",
       "Computer Science",
       "Data Science",
@@ -331,7 +332,7 @@ function getCategoryLink(category) {
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.accurate.in/article/btech/choosing-engineering-as-a-career-after-12th/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
@@ -343,7 +344,7 @@ function getCategoryLink(category) {
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.mindler.com/blog/medical-courses-after-12th/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
@@ -355,7 +356,7 @@ function getCategoryLink(category) {
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://search.aeccglobal.com/article/architecture-courses-after-12-for-students"
           target="_blank"
           rel="noreferrer"
           className="category-link"
@@ -367,7 +368,7 @@ function getCategoryLink(category) {
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.upgrad.com/blog/career-options-after-12th-computer-science/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
@@ -379,144 +380,144 @@ function getCategoryLink(category) {
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.datacamp.com/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Learn About Data Science
         </a>
       );
     case "Astrology":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.udemy.com/topic/astrology/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          NASA Lessgo
         </a>
       );
     case "Charted Accountant":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href=" https://datatrained.com/dt-finance/how-to-become-a-chartered-accountant-after-12th/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Manage Funds
         </a>
       );
     case "BBA":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.hindustantimes.com/education/commerce-career-options-after-12th/bba"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Learn About BBA
         </a>
       );
     case "B.Com":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.csit.edu.in/blog/b-com-course-eligibility-career-fees-benefits-and-more/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          B.Com Champ
         </a>
       );
     case "Law":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://leverageedu.com/blog/law-courses-after-12th/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Learn the Law
         </a>
       );
     case "Chief Finance Officer":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://cleverharvey.com/how-to-become-a-cfo-after-12th-in-india/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Manage Finances
         </a>
       );
     case "Teaching":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.careers360.com/courses/articles/teaching-courses-after-12th-counar"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Love Students, huh
         </a>
       );
     case "Fashion Designing":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://idreamcareer.com/blog/fashion-designing-courses-after-12th/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Design Me Something
         </a>
       );
     case "Fine Arts":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.virohan.com/blog/fine-arts-courses-after-12th"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Learn About Fine Arts
         </a>
       );
     case "Journalism":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://aaftonline.com/blog/journalism-courses-after-12th/#:~:text=Bachelor's%20Degree%20Courses%20in%20Journalism%20%26%20Mass%20Communication&text=Following%20the%2012th%20grade%2C%20there,Journalism%2C%20Film%20and%20Television%20Studies"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Stay up to Date
         </a>
       );
     case "BA":
       return (
         <a
           style={{ textDecoration: "none" }}
-          href="https://leverageedu.com/blog/career-options-after-10th-in-commerce/"
+          href="https://www.collegedekho.com/articles/design-courses-after-12th/"
           target="_blank"
           rel="noreferrer"
           className="category-link"
         >
-          See Softwares
+          Learn About BA
         </a>
       );
     default:

@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Quiz.css";
-import quiz10 from "../quiz.json";
-import quiz12Science from "../quiz12Science.json";
-import quiz12Commerce from "../quiz12Commerce.json";
-import quiz12Arts from "../quiz12Arts.json";
+import quiz10 from "../../src/quiz.json";
+import quiz12Science from "../../src/quiz12Science.json";
+import quiz12Commerce from "../../src/quiz12Commerce.json";
+import quiz12Arts from "../../src/quiz12Arts.json";
 
 const Quiz = ({
   selectedEducation,
-  showQuiz,
   checkAnswer,
   selectedAnswer,
   questionIndex,
@@ -19,7 +18,23 @@ const Quiz = ({
   const [question, setQuestion] = useState({});
   const [selectedQuizArray, setSelectedQuizArray] = useState([]);
   const [shuffledQuizArray, setShuffledQuizArray] = useState([]);
-  const [isQuestionVisible, setIsQuestionVisible] = useState(true); // State to control animation
+  const [isQuestionVisible, setIsQuestionVisible] = useState(true);
+  const imageArray = [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png",
+    "6.png",
+    "7.png",
+    "8.png",
+    "9.png",
+    "10.png",
+    "11.png",
+    "13.png",
+    "14.png",
+  ];
+  const [currentImage, setCurrentImage] = useState(imageArray[0]); // State to store the current image
 
   const isSubmitDisabled = !selectedAnswer;
 
@@ -43,7 +58,7 @@ const Quiz = ({
       }
       setSelectedQuizArray(shuffled.slice(0, 15));
       setShuffledQuizArray(shuffled.slice(0, 15));
-      setQuestion(shuffled[0]); // Initialize with the first question
+      setQuestion(shuffled[0]);
     }
     console.log(fetchedQuizArray);
   }, [selectedEducation]);
@@ -51,11 +66,12 @@ const Quiz = ({
   const handleNextQuestion = () => {
     const nextIndex = questionIndex + 1;
     if (nextIndex < shuffledQuizArray.length) {
-      setIsQuestionVisible(false); // Hide the question with animation
+      setIsQuestionVisible(false);
       setTimeout(() => {
         setQuestion(shuffledQuizArray[nextIndex]);
+        setCurrentImage(randomPic()); // Change the current image
         nextQuestion();
-        setIsQuestionVisible(true); // Show the new question with animation
+        setIsQuestionVisible(true);
       }, 400);
     } else {
       // Handle end of the quiz, e.g., show result or navigate to the result page
@@ -65,19 +81,16 @@ const Quiz = ({
 
   useEffect(() => {
     document.title = "Quiz - Trajectory";
+    setCurrentImage(randomPic()); // Initialize the current image
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const backgroundImages = imageArray;
   const randomPic = () => {
-    let randomImage = [
-      "https://www.clipartmax.com/png/middle/329-3296448_path-clipart-career-development-career-path-icon-png.png",
-      "https://www.clipartmax.com/png/middle/279-2799552_you-knew-about-the-value-proposition-for-offshore-development-confused-about-your.png",
-      "https://www.clipartmax.com/png/middle/231-2310721_how-do-we-prepare-new-chemistry-teachers-for-the-21st-career-path.png",
-      "https://www.clipartmax.com/png/middle/146-1460866_career-path-career-path-png-transparent.png",
-    ];
-
-    let image = randomImage[Math.floor(Math.random() * randomImage.length)];
-    return image;
+    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    console.log("IMAGE URL", backgroundImages[randomIndex]);
+    return backgroundImages[randomIndex];
   };
 
   return (
@@ -87,12 +100,12 @@ const Quiz = ({
           isQuestionVisible ? "question-animation show" : "question-animation"
         }`}
       >
-        <div className="quiz">
-          {/* <img className="imagePosition" src={randomPic()}></img> */}
-
+        <div>
           <section className="bg-dark text-white">
+            <img className="imagePosition" src={currentImage} />
+
             <div className="container" style={{ marginTop: "10%" }}>
-              <div className="row justify-content-center">
+              <div>
                 <div className="col-lg-8">
                   <div
                     className="card p-4"

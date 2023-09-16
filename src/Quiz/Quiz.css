@@ -8,8 +8,11 @@
 }
 
 .imagePosition {
+  margin-left: 70%;
   position: absolute;
-  justify-content: right;
-  height: 200px;
-  width: 150px;
+  display: inline-flex;
+  height: 400px;
+  width: 400px;
+  box-shadow: 1cm;
+  /* mix-blend-mode: multiply; */
 }
