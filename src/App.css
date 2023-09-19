@@ -1,11 +1,6 @@
-.App {
-  /* text-align: center; */
-}
-
 .app {
   max-width: 100%;
   overflow-x: hidden;
-
   overflow-y: hidden;
   width: 100vw;
   min-height: 100vh;

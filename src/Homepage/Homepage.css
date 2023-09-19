@@ -1,10 +1,11 @@
-/* Base styles for the header */
 .banner {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 80vh;
   text-align: left;
   background-size: cover;
   background-position: center center;
-  width: 100vw;
-  min-height: 80vh;
 }
 
 .mainpagecontent {
@@ -14,117 +15,97 @@
 
 .banner_description {
   color: white;
-  font-family: "Roboto Mono", sans-serif;
-  display: inline;
-  align-items: center;
-  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
   margin-left: 50px;
   margin-right: 50px;
-  font-weight: bolder;
   opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInRight 0.5s forwards;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.5s forwards;
 }
 
-@keyframes fadeInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.description-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.carrerimgg {
+.description-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.careerimg-link {
   display: flex;
   justify-content: flex-end;
-  margin-top: -25px;
-  margin-left: 100px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.5s 0.2s forwards;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.carrerimgg img {
+.careerimg-link img {
   width: 550px;
   height: auto;
-  padding-right: 30px;
-  margin-right: 10px;
-  margin-top: 90px;
+  margin-top: 20px;
   transition: transform 0.3s;
 }
 
-.carrerimgg img:hover {
+.careerimg-link img:hover {
   transform: scale(1.05);
 }
 
-.banner_description h1 {
-  text-align: left;
-  margin-left: -280px;
-  font-weight: bolder;
-  transition: color 0.3s;
-}
-
-.banner_description h3 {
-  font-size: medium;
-  margin-top: 40px;
-  line-height: 1.5;
-  font-weight: bolder;
+.banner_buttons {
+  margin-left: 50px;
+  margin-top: 20px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.5s 0.4s forwards;
 }
 
-.banner_buttons {
-  margin-left: 180px;
-  margin-top: -70px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.5s 0.6s forwards;
-}
-
-.button-52 {
-  width: 250px;
-  height: 100px;
+.button-start {
+  width: 380px; /* Increase width */
+  height: 100px; /* Increase height */
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 20px 50px;
+  padding: 30px 30px; /* Increase padding */
   outline: 0;
-  border: 4px solid #ffffff;
+  border: none; /* Remove the border */
   cursor: pointer;
   position: relative;
-  background-color: rgba(255, 255, 255, 0);
-  color: #ffffff; /* Text color */
+  background-color: rgb(42, 43, 69);
+  color: #ffffff;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   border-radius: 10px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+
+  /* Add box-shadow for a button effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.button-52:hover {
+.button-start:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  color: #000000; /* Text color on hover */
+  color: #000000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  .banner_description h3 {
-    font-size: 18px;
-    margin-bottom: 20px; /* Add margin to separate text from button */
+  .description-title {
+    font-size: 2rem;
   }
 
-  .button-52 {
-    width: 200px;
-    height: 70px;
+  .description-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .button-start {
+    width: 250px;
+    height: 80px;
     font-size: 18px;
-    padding: 15px 30px;
+    padding: 20px 50px;
   }
 
   .mainpagecontent {
@@ -137,7 +118,7 @@
     margin-top: 20px;
   }
 
-  .carrerimgg {
+  .careerimg-link {
     margin-left: 0;
     margin-top: 20px;
   }

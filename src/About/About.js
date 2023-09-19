@@ -52,7 +52,7 @@ export default function About() {
           <p>Designer</p>
           <div className="social-links">
             <a
-              href="https://github.com/jeetshah97"
+              href="https://github.com/jeetshah07"
               target="_blank"
               rel="noreferrer"
             >
